@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>慕课网APP下载</title>
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/login.css">
+	<style>
+		nav {
+    min-width: 1190px;
+    margin: 0 auto;
+	height: 72px;
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.bgf {
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, .06);
+}
+
+.bg0 {
+    box-shadow: 0 2px 4px 0 rgba(7, 17, 27, .06);
+    background-color: #F8FAFC;
+}
+
+.header-nav {
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0 20px;
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 140px;
+    height: 72px;
+}
+
+.nav-item li {
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    font-size: 16px;
+    line-height: 72px;
+    padding: 0 20px;
+    color: #4D555D;
+}
+
+.nav-item a:hover {
+    color: #07111b;
+}
+
+/* 搜索 */
+.search {
+    width: 300px;
+    height: 42px;
+    display: inline-block;
+    margin: 15px 0 15px 24px;
+    line-height: 42px;
+    border-bottom: 1px solid #D9DDE1;
+    position: relative;
+}
+
+.search input {
+    width: 260px;
+    border: none;
+    outline: none;
+    color: #4D555D;
+    font-size: 12px;
+}
+
+.search i {
+    width: 34px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 18px;
+    color: #4D555D;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search i:hover {
+    background-color: rgba(240, 20, 20, .4);
+    color: #F01414;
+}
+
+.search-sno {
+    position: absolute;
+    right: 36px;
+    top: 0;
+    color: #4D555D;
+    cursor: pointer;
+}
+
+.search-sno span {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background-color: #f3f5f7;
+}
+
+.hd-nav-right {
+    margin-right: 10px;
+    position: relative;
+}
+
+.hd-nav-right li {
+    float: left;
+    color: #D9DDE1;
+    line-height: 72px;
+}
+
+.hd-nav-right li a {
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.hd-nav-right li:nth-child(2) a {
+    padding: 8px 15px;
+    border: 1px solid #D9DDE1;
+    border-radius: 20px;
+}
+
+.hd-nav-right li:nth-child(2) a:hover {
+    background-color: #f8fafc;
+}
+
+.hd-nav-right i {
+    margin-right: 8px;
+}
+
+.hd-nav-right li:last-child a {
+    display: inline-block;
+}
+
+.hd-nav-right li a:hover {
+    color: #F01414;
+}
+
+.hd-nav-right li:nth-child(1):hover .download {
+    display: block;
+}
+
+.download {
+    width: 280px;
+    z-index: 99;
+    padding: 10px 24px 22px;
+    position: absolute;
+    top: 72px;
+    left: -246px;
+    color: #1C1F21;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    line-height: 36px;
+    text-align: center;
+    display: none;
+}
+
+.pc {
+    padding: 10px 0;
+    border-bottom: 1px solid #4D555D;
+}
+
+.download a {
+    display: block;
+    width: 132px;
+    height: 36px;
+    font-size: 13px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: #4D555D;
+    border-radius: 18px;
+    margin: auto;
+}
+
+.download a:hover {
+    color: #fff !important;
+    background-color: #07111b;
+}
+
+.app .qcr img {
+    float: left;
+}
+
+.qcr small {
+    float: right;
+    margin-right: 26px;
+}
+
+.app .qcr a {
+    margin-top: 5px;
+    float: right;
+    /* margin-right: 20px; */
+}
+
+.car {
+    position: absolute;
+    width: 344px;
+    z-index: 99;
+    padding: 0 16px;
+    background: #fff;
+    box-sizing: border-box;
+    background-color: #fff;
+    right: 126px;
+    border-radius: 0 0 8px 8px;
+    line-height: 22px;
+    color: #9199A1;
+    box-shadow: 0 8px 16px 0 rgba(28, 31, 33, .2);
+    display: none;
+}
+
+.car-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-top h2 {
+    color: #07111B;
+    font-weight: 600;
+}
+
+.car-cont {
+    padding: 40px 0 50px;
+    text-align: center;
+}
+
+.car-cont i {
+    line-height: 70px;
+    font-size: 70px;
+}
+
+.car-cont small {
+    display: block;
+}
+
+.car-cont em {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgba(240, 20, 20, .6);
+    cursor: pointer;
+}
+
+.car-cont em:hover {
+    color: #F01414;
+}
+
+.car-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.car .car-bottom a {
+    font-size: 12px;
+    padding: 6px 18px !important;
+    color: #fff;
+    background-color: rgba(240, 20, 20, .8);
+}
+
+.car .car-bottom a:hover {
+    color: #fff;
+    background-color: rgba(240, 20, 20, .9) !important;
+}
+	#main {
+		min-height: 750px;
+		padding: 20px 0;
+	}
+
+	.browser-down {
+		background: url(img/bg1.png);
+		height: auto;
+	}
+
+	.down-wrap {
+		position: relative;
+		margin: 0 auto;
+		width: 1152px;
+		height: 480px;
+		border-radius: 15px;
+		overflow: hidden;
+		color: #FFF;
+		box-shadow: 0 2px 8px 0 rgba(28, 31, 33, .15);
+	}
+
+	.browser-down .img {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 161px;
+		background: url(img/img1.png) center center no-repeat;
+	}
+
+	.browser-down h2 {
+		margin-top: 64px;
+		margin-bottom: auto;
+	}
+
+	.down-wrap h2 {
+		font-size: 32px;
+		text-align: center;
+		line-height: 48px;
+	}
+
+	.down-wrap .btn-download.windows {
+		top: 150px;
+		left: 368px;
+	}
+
+	.down-wrap .btn-download {
+		position: absolute;
+		width: 180px;
+		height: 48px;
+		display: block;
+		line-height: 48px;
+		background-image: linear-gradient(-90deg, #ff7621 2%, #f7331c 100%);
+		border-radius: 24px;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.down-wrap .btn-download.mac {
+		top: 150px;
+		left: 594px;
+	}
+
+	.down-wrap .btn-download.mac span {
+		position: absolute;
+		top: -5px;
+		right: -32px;
+		width: 64px;
+		height: 20px;
+		font-size: 12px;
+		color: #545C63;
+		text-align: center;
+		line-height: 20px;
+		background: #FFF;
+		box-shadow: 0 2px 8px 0 rgba(28, 31, 33, .15);
+		border-radius: 12px 12px 12px 0;
+	}
+
+	.browser-down ul li {
+		float: left;
+		margin-top: 100px;
+		width: 33%;
+		text-align: center;
+		line-height: 22px;
+		position: relative;
+	}
+
+	ol,
+	ul {
+		list-style: none;
+	}
+
+	.browser-down ul li:after {
+		position: absolute;
+		top: 4px;
+		right: -6px;
+		content: "/";
+		font-size: 32px;
+		color: rgba(255, 255, 255, .2);
+		text-align: center;
+		line-height: 32px;
+	}
+
+	.app-down {
+		margin-top: 37px;
+		margin-bottom: 30px;
+		background: url(img/bg2.png);
+	}
+
+	.down-wrap {
+		position: relative;
+		/*margin: 0 auto;*/
+		width: 1152px;
+		height: 480px;
+		border-radius: 15px;
+		overflow: hidden;
+		color: #FFF;
+		box-shadow: 0 2px 8px 0 rgba(28, 31, 33, .15);
+	}
+
+	.app-down .img {
+		position: absolute;
+		left: 180px;
+		bottom: 0;
+		width: 385px;
+		height: 371px;
+		background: url(img/img2.png) center center no-repeat;
+	}
+
+	.app-down .intro {
+		position: absolute;
+		top: 138px;
+		left: 636px;
+		font-size: 16px;
+		letter-spacing: 10px;
+		line-height: 24px;
+	}
+
+	.down-wrap .intro {
+		margin-top: 4px;
+		font-size: 14px;
+		text-align: center;
+		line-height: 22px;
+	}
+
+	.down-wrap .btn-download.android {
+		top: 276px;
+		left: 636px;
+	}
+
+	.down-wrap .btn-download.ios {
+		top: 204px;
+		left: 636px;
+	}
+
+	.down-wrap .btn-download {
+		position: absolute;
+		width: 180px;
+		height: 48px;
+		display: block;
+		line-height: 48px;
+		background-image: linear-gradient(-90deg, #ff7621 2%, #f7331c 100%);
+		border-radius: 24px;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	:link,
+	:visited,
+	ins {
+		text-decoration: none;
+	}
+
+	.app-down .mobile-pic-qrcode {
+		width: 112px;
+		height: 112px;
+		background: url(img/app-down.png);
+		position: absolute;
+		left: 856px;
+		top: 208px;
+	}
+
+	.imv2-ios {
+		height: 20px;
+		display: inline-block;
+		width: 30px;
+	}
+
+	.imv2-android {
+		height: 20px;
+		display: inline-block;
+		width: 30px;
+	}
+
+	.imv2-windows {
+		height: 20px;
+		display: inline-block;
+		width: 30px;
+	}
+
+	.down-wrap .btn-download.disabled {
+		background: #aaa;
+		cursor: default;
+	}
+
+	@media screen and (max-width: 1340px) {
+		.search {
+			width: 150px;
+		}
+
+		.search input {
+			width: 110px;
+		}
+
+		.search-sno span {
+			display: none;
+		}
+	}
+	/* 底部 */
+	.ft {
+		background-color: #1c1f21;
+	}
+	.footer {
+		width: 1088px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding: 36px 0;
+		color: #ccc;
+		justify-content: space-between;
+	}
+
+	.ft-left ul,
+	.ft-right ul {
+		display: flex;
+	}
+
+	.footer li {
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.footer li:hover {
+		color: #fff;
+	}
+
+	.footer li:last-child {
+		margin-right: 0;
+	}
+
+	.ft-left ul {
+		margin-bottom: 10px;
+	}
+
+	.ft-right ul li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ft-right i {
+		font-size: 30px;
+	}
+</style>
+</head>
+
+<body>
+	<nav>
+		<div class="header-nav">
+			<h3 class="logo">
+				<a href="../index.html"><img src="./images/logo.png" alt="" height="72px"></a>
+			</h3>
+			<div class="nav-item">
+				<ul>
+					<li><a href="./free.html">免费课程</a></li>
+					<li><a href="./free.html">实战课程</a></li>
+					<li><a href="./job.html">就业班</a></li>
+					<li><a href="#">猿问</a></li>
+					<li><a href="./node.html">手记</a></li>
+					<li><a href="./recruit.html">猿聘</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="text">
+				<div class="search-sno">
+					<span>Web前端</span>
+					<span>小程序</span>
+				</div>
+				<i class="iconfont icon-search"></i>
+
+			</div>
+			<div class="hd-nav-right fr">
+				<ul>
+					<li>
+						<a href="./download.html">下载APP</a>
+						<div class="download">
+							<div class="pc">
+								<p>慕课网浏览器 - PC客户端</p>
+								<a href="#"><i class="iconfont icon-win"></i>Windows版</a>
+								<small>Mac版开发中，敬请期待…</small>
+							</div>
+							<div class="app">
+								<p>慕课网APP - 随时随地学编程</p>
+								<div class="qcr">
+									<img src="./images/appload.png" alt="" width="108" height="108">
+									<a href="#"><i class="iconfont icon-pingguo"></i>AppStore下载</a>
+									<a href="#"><i class="iconfont icon-anzhuo"></i>Android下载</a>
+									<small>扫描下载慕课网APP</small>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="shopCar">
+						<a href="#"><i class="iconfont icon-icon_gouwuchemi"></i>购物车</a>
+						<div class="car">
+							<div class="car-top">
+								<h2>我的购物车</h2>
+								<small>已加入0门课程</small>
+							</div>
+							<div class="car-cont">
+								<i class="iconfont icon-icon_gouwuchemi"></i>
+								<p>购物车里空空如也</p>
+								<small>快去这里选购你中意的课程</small>
+								<em>实战课程</em>
+								<em>就业班</em>
+							</div>
+							<div class="car-bottom">
+								<small>我的订单中心</small>
+								<a href="#">去购物车</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="JavaScript:void(0)" id="register">注册</a>
+						/
+						<a href="JavaScript:void(0)" id="login">登录</a>
+					</li>
+				</ul>
+			</div>
+			<div class="overCurtain"></div>
+
+			<div class="hide-center">
+				<div id="formhead">
+					<div id="formhead-title">
+						登录
+					</div>
+					<button type="button" id="close">X</button>
+				</div>
+				<div id="formbody">
+					<div class="loginUserName">
+						<input id="input-topright-loginInput" name="userName" class="loginInput" placeholder="请输入用户名" type="text" value="">
+					</div>
+					<div class="loginPassword">
+						<input id="input-bottomright-loginInput" name="password" class="loginInput" placeholder="请输入密码" type="password"
+						 value="" style="border-bottom-right-radius:5px;">
+					</div>
+					<div id="formfoot">
+						<button id="BSignIn" type="submit">登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- 顶部导航--end -->
+	<div id="main">
+		<div class="down-wrap browser-down">
+			<h2>慕课网浏览器桌面客户端</h2>
+			<p class="intro">Chrome版</p>
+			<a class="btn-download windows" target="_blank" href="//file.mukewang.com/iMooc_Chrome_Setup_v1.0.2.msi">
+				<i class="imv2-windows"></i>Windows版下载</a>
+			<a class="btn-download mac disabled" target="_blank" href="javascript:void(0)">
+				<span>敬请期待</span>
+				<i class="imv2-ios"></i>Mac版下载</a>
+			<ul>
+
+				<li>慕课网专属定制Plus<br>
+					解决兼容，播放等问题，学习再无忧</li>
+
+				<li> 基于Chromium开发<br>
+					性能稳，启动快，效率高，打开即学习</li>
+				<li>一键快速安装<br>
+					享受专属便捷的学习服务</li>
+			</ul>
+			<div class="img"></div>
+		</div>
+
+		<div class="down-wrap app-down">
+			<h2>慕课网APP</h2>
+			<p class="intro">随/时/随/地 想/学/就/学</p>
+			<a class="btn-download ios" target="_blank" href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8">
+
+				<i class="imv2-ios"></i>App Store 下载</a>
+			<a class="btn-download android" target="_blank" href="//www.imooc.com/mobile/mukewang.apk">
+				<i class="imv2-android"></i>Android 下载</a>
+			<div class="mobile-pic-qrcode"></div>
+			<div class="img"></div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="ft">
+		<footer class="footer">
+			<div class="ft-left">
+				<ul>
+					<li>企业合作</li>
+					<li>人才招聘</li>
+					<li>联系我们</li>
+					<li>讲师招募</li>
+					<li>帮助中心</li>
+					<li>意见反馈</li>
+					<li>慕课大学</li>
+					<li>友情链接</li>
+				</ul>
+				<small>© 2018 imooc.com 京ICP备 12003892号-11</small>
+			</div>
+			<div class="ft-right">
+				<ul>
+					<li><i class="iconfont icon-weixin1"></i><span>官方公众号</span></li>
+					<li><i class="iconfont icon-5"></i><span>官方微博</span></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="./js/jquery.js"></script>
+	<!-- <script src="./js/login.js"></script> -->
+	<script>
+		// -------购物车---显示--隐藏------------
+		$('#shopCar').hover(() => {
+			$('.car').css({
+				display: 'block'
+			})
+		}, () => {
+			clearTimeout('timer');
+			$('.car').css({
+				display: 'none'
+			})
+		})
+
+		//--------搜索框----样式变化------------
+		let search = $(".search");
+		let searchInput = search.children("input");
+		let searchI = search.children("i");
+		searchInput.focus(() => {
+			search.css({
+				borderBottom: '1px solid #F01414',
+			})
+			searchI.css({
+				backgroundColor: 'rgba(240,20,20,.4)',
+				color: '#F01414'
+			})
+			$('.search-sno').css({
+				display: 'none'
+			})
+		})
+		searchInput.blur(() => {
+			search.css({
+				borderBottom: '1px solid #4D555D',
+			})
+			searchI.css({
+				backgroundColor: '',
+				color: '#4D555D'
+			})
+			$('.search-sno').css({
+				display: 'block'
+			})
+		})
+		$('.newcomer').children('i').click(() => {
+			$('.newcomer').css({
+				display: 'none',
+			})
+		})
+
+		$("#login").click(function () {
+			$(".hide-center").fadeIn("slow");
+			$(".overCurtain").fadeIn("slow");
+		})
+		$("#close").click(function () {
+			$(".hide-center").fadeOut("slow")
+			$(".overCurtain").fadeOut("slow")
+		})
+
+		$("#register").click(function () {
+			$(".hide-center").fadeIn("slow");
+			$(".overCurtain").fadeIn("slow");
+		})
+		$("#close").click(function () {
+			$(".hide-center").fadeOut("slow")
+			$(".overCurtain").fadeOut("slow")
+		})
+
+		$('.overCurtain').css({
+			height: $(window).height(),
+		})
+	</script>
+</body>
+
+</html>

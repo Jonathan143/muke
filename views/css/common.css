@@ -1,0 +1,41 @@
+@charset 'utf-8';
+body, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, p,div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 1000px;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mg{
+    width: 1200px;
+    margin: 0 auto;
+}

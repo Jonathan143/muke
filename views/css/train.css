@@ -1,0 +1,535 @@
+.trainheader .navbot{
+    width: 100%;
+    height: 520px;
+    background: url("../img/train/banner4.png") no-repeat;
+    background-size: cover;
+}
+.trainheader .navbot .job-banner{
+    width: 1152px;
+    height: 328px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+.trainheader .job-banner .logo{
+    display: block;
+    width:136px;
+    height: 48px;
+    margin-top: 10px;
+}
+.trainheader .job-banner .logo img{
+    width:136px;
+    height: 48px;
+    padding-right: 10px;
+}
+.trainheader .job-banner .txt{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.trainheader .job-banner .txt .issue{
+    font-size: 24px;
+    letter-spacing: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+    /*text-align: center;*/
+}
+.trainheader .job-banner .txt>h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    padding-bottom: 20px;
+}
+.trainheader .job-banner .txt .solve{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+.trainheader .job-banner .caselist li{
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.trainheader .job-banner .caselist li:nth-child(2n){
+    font-size: 24px;
+    margin: 0 24px;
+    line-height: 44px;
+}
+.trainheader .job-banner-top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    height: 70px;
+}
+.trainheader .job-banner-top .type{
+    display: flex;
+}
+.trainheader .job-banner-top .option>p{
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.trainheader .job-banner-top .option>p:hover + .optionlist{
+    display: block;
+}
+.trainheader .job-banner-top .option{
+    position: relative;
+}
+.trainheader .job-banner-top .option .optionlist{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 360px;
+    height: 360px;
+    border-radius:0 0 20px 20px;
+}
+.trainheader .job-banner-top .option .optionlist li{
+    border-bottom: 1px solid #ccc;
+    margin: 20px 30px;
+}
+.trainheader .job-banner-top .option .optionlist li>p:nth-child(1){
+    font-size: 16px;
+    font-weight: bold;
+}
+.trainheader .job-banner-top .option .optionlist li>p:nth-child(2){
+    color:#9199a1;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.trainheader .job-banner-top .option .optionlist li:last-child{
+    border-bottom: 0;
+}
+.share{
+    height: 70px;
+    line-height: 70px;
+}
+.share>span{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 30px;
+    color: #9F9F9F;
+}
+.trainheader .job-banner .immediately{
+    width: 100px;
+    line-height: 40px;
+    line-height: 40px;
+    background: #000;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px auto 0;
+
+}
+/*内容*/
+.traincon{
+
+}
+.traincon .need{
+    width: 1200px;
+    margin: 80px auto 0;
+}
+.traincon .need .needtitle>h3{
+    font-size: 32px;
+    color: #07111b;
+    text-align: center;
+    line-height: 48px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.traincon .need .needtitle>p{
+    font-size: 16px;
+    color: #383d42;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+.traincon .needlist{
+    display: flex;
+    justify-content: space-around;
+}
+.traincon .need .needcon .needlist li{
+    width: 224px;
+}
+.traincon .needlist li p:nth-child(1){
+    width: 250px;
+    height: 28px;
+    padding: 30px 0 70px;
+    font-size: 24px;
+    background: url("../img/train/1.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+}
+.traincon .needlist li p:nth-child(2){
+    width: 250px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.traincon .stage{
+    background: url("../img/train/bg4.png") no-repeat;
+    background-size: 100% 100%;
+    height: 1600px;
+}
+.traincon .stage>h2{
+    padding: 80px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.traincon .stage .line{
+    background: url("../img/train/s2-line4.png") no-repeat center;
+    width: 918px;
+    height: 156px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+
+}
+
+.traincon .stage .positionstage{
+    position: relative;
+    width: 1200px;
+    height: 362px;
+    margin: 0 auto;
+}
+
+.traincon .stagelist li{
+    width: 270px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+.traincon .stagelist li>p:nth-child(1) img{
+    width: 50px;
+    height: 50px;
+}
+
+.traincon .stagelist li p:nth-child(3){
+    padding-bottom: 10px;
+}
+
+
+/*第一个伸缩盒子*/
+.traincon .stagelist li:nth-child(1):hover{
+    background: #fff;
+    height: 440px;
+    transition: 1s height;
+}
+.traincon .stagelist li:nth-child(1){
+    background: url("../img/train/s2_bg1.png") no-repeat;
+    background-size: 100% 100%;
+    height: 182px;
+}
+.traincon .stagelist li:nth-child(1) h4{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.traincon .stagelist li:nth-child(1) p:nth-child(4){
+    padding-top: 50px;
+    line-height: 30px;
+    padding-bottom: 60px;
+}
+.traincon .stagelist li:nth-child(1) p:nth-child(5){
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: purple;
+}
+/*第二个伸缩盒子*/
+.traincon .stagelist li:nth-child(2):hover{
+    background: #fff;
+    height: 440px;
+    transition: 1s height;
+}
+.traincon .stagelist li:nth-child(2){
+    background: url("../img/train/s2_bg2.png") no-repeat;
+    background-size: 100% 100%;
+    height:222px;
+    left:294px;
+}
+.traincon .stagelist li:nth-child(2) h4{
+    width: 100px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.traincon .stagelist li:nth-child(2) p:nth-child(4){
+    padding-top: 50px;
+    line-height: 30px;
+    padding-bottom: 34px;
+}
+.traincon .stagelist li:nth-child(2) p:nth-child(5){
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: purple;
+}
+/*第三个伸缩盒子*/
+.traincon .stagelist li:nth-child(3):hover{
+    background: #fff;
+    height: 440px;
+    transition: 1s height;
+}
+.traincon .stagelist li:nth-child(3){
+    background: url("../img/train/s2_bg2.png") no-repeat;
+    background-size: 100% 100%;
+    height: 262px;
+    left: 588px;
+}
+.traincon .stagelist li:nth-child(3) h4{
+    width: 130px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.traincon .stagelist li:nth-child(3) p:nth-child(4){
+    font-size: 14px;
+    padding-top: 70px;
+    line-height: 30px;
+    padding-bottom: 14px;
+}
+.traincon .stagelist li:nth-child(3) p:nth-child(5){
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: purple;
+}
+/*第二个伸缩盒子*/
+.traincon .stagelist li:nth-child(2):hover{
+    background: #fff;
+    height: 440px;
+    transition: 1s height;
+}
+.traincon .stagelist li:nth-child(2){
+    background: url("../img/train/s2_bg4.png") no-repeat;
+    background-size: 100% 100%;
+    height:222px;
+    left:294px;
+}
+.traincon .stagelist li:nth-child(2) h4{
+    width: 100px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.traincon .stagelist li:nth-child(2) p:nth-child(4){
+    padding-top: 50px;
+    line-height: 30px;
+    padding-bottom: 34px;
+}
+.traincon .stagelist li:nth-child(2) p:nth-child(5){
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: purple;
+}
+/*第四个伸缩盒子*/
+.traincon .stagelist li:nth-child(4):hover{
+    background: #fff;
+    height: 440px;
+    transition: 1s height;
+}
+.traincon .stagelist li:nth-child(4){
+    background: url("../img/train/s2_bg4.png") no-repeat;
+    background-size: 100% 100%;
+    height: 302px;
+    left: 882px;
+}
+.traincon .stagelist li:nth-child(4) h4{
+    width: 130px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.traincon .stagelist li:nth-child(4) p:nth-child(4){
+    font-size: 14px;
+    padding-top: 130px;
+    line-height: 30px;
+    padding-bottom: 14px;
+}
+.traincon .stagelist li:nth-child(4) p:nth-child(5){
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: purple;
+}
+.buy{
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+.buy >p{
+    width: 100px;
+    line-height: 40px;
+    background: rgba(255,255,255,.2);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px auto 50px;
+}
+.rise>h3{
+    padding: 80px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.rise .bgtree{
+    width: 1200px;
+    height: 567px;
+    margin: 0 auto;
+}
+.rise .bgtree img{
+    width: 100%;
+    height: 100%;
+}
+.study >p{
+    width: 100px;
+    line-height: 40px;
+    background: rgba(255,255,255,.2);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px auto 50px;
+}
+.fourstage{
+    background: #FDFDFD;
+}
+.fourstage>h3{
+    padding: 80px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.firststage{
+    width: 1090px;
+    height: 600px;
+    margin: 0 auto 30px;
+    background: #fff;
+    padding: 20px 55px;
+    box-shadow: 0 4px 36px 0 rgba(28,31,33,.2);
+}
+.fourstage>div:nth-child(2){
+    border-radius: 12px;
+    background: url("../img/train/firstbg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.fourstage>div:nth-child(3){
+    border-radius: 12px;
+    background: url("../img/train/second.jpg") no-repeat;
+    background-size: 100% 100%;
+}.fourstage>div:nth-child(4){
+     border-radius: 12px;
+     background: url("../img/train/third.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+.fourstage>div:nth-child(5){
+    border-radius: 12px;
+    background: url("../img/train/fourth.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.firststage .leftstage{
+    width: 404px;
+}
+.firststage .leftstage h4{
+    font-size: 24px;
+    padding: 20px 0;
+    border-bottom: 2px solid #FF5D00;
+}
+.firststage .leftstage p{
+    font-size: 14px;
+}
+.firststage .leftstage p:nth-child(1){
+    font-size:16px ;
+    padding: 20px 0;
+    color: #ff5d00;
+    font-weight: bold;
+}
+.firststage .leftstage p:nth-child(3){
+    font-size:16px ;
+    padding: 20px 0;
+    color: #ff5d00;
+    font-weight: bold;
+}
+.firststage .leftstage p{
+    line-height: 30px;
+}
+.more{
+    padding-bottom: 50px;
+}
+.more >p{
+    width: 100px;
+    line-height: 40px;
+    background: rgba(0,0,0,.8);
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 30px auto 0;
+}
+.system{
+    height: 416px;
+    background: url("../img/train/s4_bg4.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.system .systemcon{
+    width: 1200px;
+    margin: 0 auto;
+}
+.system .systemcon>h3{
+    padding: 60px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.system .systemlist{
+    display: flex;
+    justify-content: space-around;
+}
+.system .systemlist>li{
+    width: 200px;
+}
+.system .systemlist>li .num{
+    width: 116px;
+    height: 116px;
+    line-height: 116px;
+    text-align: center;
+    font-size: 40px;
+    border:5px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+}
+.system .systemlist>li>p{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}

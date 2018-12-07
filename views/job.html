@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>就业班</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/job.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/navright.css">
+    <link rel="stylesheet" href="./css/iconfonts.css">
+    <link rel="stylesheet" href="./commpont/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/foot.css">
+</head>
+
+<body>
+
+    <div class="jobheader">
+        <div class="navtop ">
+            <div class="nav mg">
+                <ul class="leftnavtop ">
+                    <li><a href="../index.html">慕课网首页</a></li>
+                    <li><a href="./free.html">免费课程</a></li>
+                    <li><a href="./free.html">实战课程</a></li>
+                    <li><a href="./job.html" class="only">就业班</a></li>
+                    <li><a href="#">猿问</a></li>
+                    <li><a href="./node.html">手记</a></li>
+                    <li><a href="./recruit.html">猿聘</a></li>
+                </ul>
+                <ul class="rightnavtop ">
+                    <li>
+                        <a href="./download.html">下载App
+                            <div class="download">
+                                <div class="topdown">
+                                    <div class="first">
+                                        <p>慕课网浏览器-pc客户端</p>
+                                        <p class="radius"><i class="icon iconfont icon-windows"></i> Windows版</p>
+                                        <p>Mac版开发中，敬请期待...</p>
+                                    </div>
+                                </div>
+                                <div class="botdown">
+                                    <p>慕课网App-随时随地学编程</p>
+                                    <div class="appdown clearfix">
+                                        <div class="appcode fl">
+                                            <img src="./img/free/code.png" alt="">
+                                        </div>
+                                        <div class="appurl fr">
+                                            <p class="radiu"><i class="icon iconfont icon-ios"></i> App Store下载</p>
+                                            <p class="radiu"><i class="icon iconfont icon-anzhuo"></i> Android下载</p>
+                                            <p>扫描下载慕课网APP</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="gouwuche icon iconfont icon-gouwucheman"></i>
+                            购物车
+                            <div class="addcar">
+                                <div class="mycar">
+                                    <span>我的购物车</span>
+                                    <span>已加入0门课程</span>
+                                </div>
+                                <hr>
+                                <div class="concar">
+                                    <p class="icon iconfont icon-gouwucheman"></p>
+                                    <p>购物车里空空如业</p>
+                                    <p>快去这里选购物你中意的课程</p>
+                                    <p class="red">实战课程</p>
+                                    <p class="red">就业班</p>
+                                </div>
+                                <hr>
+                                <div class="footcar">
+                                    <span>我的订单中心</span>
+                                    <span>去购物车</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li><a href="#">登录</a>/<a href="#">注册</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="navbot">
+            <div class="job-banner">
+                <a href="#" class="logo">
+                    <img src="./img/job/log.png" alt="">
+                </a>
+                <div class="txt">
+                    <p class="issue">学编程，费用高？没时间？入门难？</p>
+                    <h3>慕课网 — 就业班</h3>
+                    <p class="solve">轻松迈入互联网行业，快速实现高薪就业</p>
+                    <div class="case">
+                        <ul class="caselist">
+                            <li>
+                                实战案例<br>
+                                均选自企业真实项目
+                            </li>
+                            <li class="line">
+                                /
+                            </li>
+                            <li>
+                                学以致用<br>
+                                接轨企业用人需求
+                            </li>
+                            <li class="line">
+                                /
+                            </li>
+                            <li>
+                                一线互联网技术<br>
+                                大咖倾囊相授
+                            </li>
+                            <li class="line">
+                                /
+                            </li>
+                            <li>
+                                超过1400W的用户<br>
+                                在慕课网学习
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jobcon">
+        <h2>全部就业班</h2>
+        <div class="engineer">
+            <ul class="englist">
+                <li v-for="(item,index) in engineer" :key="index">
+                    <div class="engnode">
+                        <div class="engcon">
+                            <div class="title">
+                                {{item.title}}
+                            </div>
+                            <p class="fe"></p>
+                            <p class="text">
+                                {{item.text}}
+                            </p>
+                        </div>
+                        <div class="engimg">
+                            <img :src="item.pic" alt="">
+                        </div>
+                        <div class="boteng">
+                            <div class="bot-eng">
+                                <div class="counttime">
+                                    <span class="time">{{item.counttime}}</span>
+                                    <i class="icon iconfont icon-dian"> </i>
+                                    <span class="people">{{item.people}}</span>
+                                </div>
+                                <!-- <a class="morebtn r" href="//class.imooc.com/fe">了解课程</a> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="ahover">
+                        <div class="hover-con">
+                            <div class="title">
+                                {{item.title}}
+                            </div>
+                            <div class="hovercon">
+                                <span>岗位：</span>
+                                {{item.station}}
+                            </div>
+                            <div class="skill">
+                                <span>技能：</span>
+                                {{item.skill}}
+                            </div>
+                            <div class="more">{{item.more}}</div>
+                            <div class="lines"></div>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <!--四大工程师-->
+        <div class="top">
+            <div class="employment">
+                <div class="emplogo">
+                    <img src="./img/job/log.png" alt="">
+                </div>
+                <div class="fourtheng">
+                    <div>
+                        前端开发工程师
+                        <ul class="stagelist">
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        Java开发工程师
+                        <ul class="stagelist">
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        Android开发工程师
+                        <ul class="stagelist">
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        PHP开发工程师
+                        <ul class="stagelist">
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="stage fl">
+                                    阶段1
+                                </div>
+                                <div class="Introduction fl">
+                                    <p>前端基础入门</p>
+                                    <p>
+                                        <span>5步骤</span>
+                                        <i class="icon iconfont icon-dian"></i>
+                                        <span>33门课</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="job-con">
+                <div class="difference">
+                    <h2>与别的培训不同，我们更在意你的学习质量！</h2>
+                    <p>虚假承诺、乱画大饼的培训多如牛毛，我们不同，我们更专注于是否能让你学到真东西！</p>
+                    <!--线上线下培训的优缺点-->
+                    <div class="train">
+                        <div class="trains">
+                            <h2>线下培训</h2>
+                            <ul class="trainlist">
+                                <li v-for="(item,index) in first" :key="index">
+                                    <i class="icon iconfont icon-yijin14-cai"></i>
+                                    <p>{{item.con}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="trains">
+                            <h2>“有的”线上培训</h2>
+                            <ul class="trainlist">
+                                <li v-for="(item,index) in second" :key="index">
+                                    <i class="icon iconfont icon-yijin14-cai"></i>
+                                    <p>{{item.con}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="trains">
+                            <h2>慕课网就业班</h2>
+                            <ul class="trainlist">
+                                <li v-for="(item,index) in third" :key="index">
+                                    <i class="icon iconfont icon-weibiaoti--"></i>
+                                    <p>{{item.con}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--为什么慕课网就业班课程能让你学会-->
+                <div class="describe">
+                    <h2>为什么慕课网就业班课程能让你学会</h2>
+                    <ul class="deslist">
+                        <li v-for="(item,index) in study" :key="index">
+                            <img :src="item.pic" alt="">
+                            <p>{{item.title}}</p>
+                            <p>{{item.con}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--招聘大数据-->
+            <div class="recruit">
+                <h2>最新互联网招聘大数据</h2>
+                <p>正在招聘职位100000+个。所有数据均由 <em>猿聘</em>提供</p>
+                <ul class="recruitlist">
+                    <li>
+                        <p>前端开发工程师</p>
+                        <p>20280 条</p>
+                    </li>
+                    <li>
+                        <p>Java开发工程师</p>
+                        <p>36282 条</p>
+                    </li>
+                    <li>
+                        <p>Android开发工程师</p>
+                        <p>9094 条</p>
+                    </li>
+                    <li>
+                        <p>PHP开发工程师</p>
+                        <p>10108 条</p>
+                    </li>
+                </ul>
+            </div>
+            <!--36442名同学与你一起学习-->
+            <div class="student">
+                <h2>36442名同学与你一起学习</h2>
+                <div class="stulist ">
+                    <ul class="studentlist" id="banner">
+                        <li v-for="(item,index) in student" :key="index">
+                            <div class="portrait"><img :src="item.pic" alt=""></div>
+                            <p>{{item.name}}</p>
+                            <!--<div class="test1"></div>-->
+                            <p class="studentcon">{{item.content}}</p>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <button class="prev" @click="prev" id="prev">
+                            < </button> <button class="next" @click="next" id="next"> >
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="circle">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--常见问题-->
+            <div class="problem">
+                <h2>常见问题</h2>
+                <ul class="problemlist">
+                    <li v-for="(item,index) in problem" :key="index">
+                        <div class="leftzan">
+                            <i class="icon iconfont icon-weibiaoti--"></i>
+                            <span>1</span>
+                        </div>
+                        <div class="rightcon">
+                            <h3>{{item.problemTitle}}</h3>
+                            <p>{{item.problemCon}}</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- 侧边栏 -->
+            <div class="right-nav">
+                <ul>
+                    <li><i class="iconfont icon-fankui"></i><span>意见反馈</span></li>
+                    <li><i class="iconfont icon-bangzhu"></i><span>帮助中心</span></li>
+                    <li><i class="iconfont icon-diedaisanicon45"></i><span>app下载</span>
+                        <div class="qcrapp"></div>
+                    </li>
+                    <li><i class="iconfont icon-Wchat"></i><span>官方微信</span>
+                        <div class="qcrw"></div>
+                    </li>
+                    <li id="goTop" @click="backTop" :class="{'backShow':isShow}"><i class="iconfont icon-icon"></i><span>返回顶部</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <div class="foots">
+            <div class="foot">
+                <ul class="footlist">
+                    <li>网站首页</li>
+                    <li>网站首页</li>
+                    <li>企业合作</li>
+                    <li>人才招聘</li>
+                    <li>联系我们</li>
+                    <li>讲师招募</li>
+                    <li>常见问题</li>
+                    <li>意见反馈</li>
+                    <li>慕课大学</li>
+                    <li>友情链接</li>
+                </ul>
+                <p>Copyright © 2018 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+            </div>
+            <div class="footpic">
+                <span></span>
+                <p class="mkwcode"></p>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jobdata.js"></script>
+    <script src="./commpont/layui/layui.js"></script>
+    <script src="./js/score.js"></script>
+    <script src="./js/move.js"></script>
+    <!--<script src="./js/banner.js"></script>-->
+    <script src="./js/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: ".jobcon",
+            data() {
+                return {
+                    engineer: [],
+                    first: [],
+                    second: [],
+                    third: [],
+                    study: [],
+                    student: [],
+                    problem: [],
+                    index: 0,
+                    clientH: 0,
+                    isShow: false,
+                }
+            },
+            methods: {
+                prev() {
+                    let prev = document.querySelector("#prev");
+                    let aBanner = document.querySelector("#banner");
+                    let oLi = document.querySelectorAll(".circle>li");
+                    this.index--;
+                    if (this.index >= 0) {
+                        console.log(this.index);
+                        aBanner.style.left = -1200 * this.index + "px"
+                        oLi[this.index + 1].className = ""
+                        oLi[this.index].className = "active";
+
+                    } else {
+                        this.index = 4;
+                        aBanner.style.left = -1200 * this.index + "px";
+                        oLi[0].className = ""
+                        oLi[this.index].className = "active";
+                    }
+
+                },
+                next() {
+                    let next = document.querySelector("#next");
+                    let aBanner = document.querySelector("#banner");
+                    let oLi = document.querySelectorAll(".circle>li");
+                    let num = 4;
+                    this.index++;
+
+                    if (this.index <= num) {
+                        aBanner.style.left = -1200 * this.index + "px"
+                        oLi[this.index - 1].className = "";
+                        oLi[this.index].className = "active"
+                        // this.index++; 
+
+                    } else {
+                        this.index = 0
+                        aBanner.style.left = 0;
+                        oLi[num].className = "";
+                        oLi[this.index].className = "active"
+                    }
+
+                },
+                handleScrool() {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > this.clientH) {
+                        this.isShow = true;
+                    } else {
+                        this.isShow = false;
+                    }
+                },
+                backTop() {
+                    let timer = '';
+                    clearInterval(timer)
+                    timer = setInterval(() => {
+                        document.documentElement.scrollTop -= 100;
+                        if (document.documentElement.scrollTop == 0) {
+                            clearInterval(timer)
+                        }
+
+                    }, 10);
+                }
+            },
+            mounted() {
+                this.clientH = document.documentElement.clientHeight;
+                window.addEventListener('scroll', this.handleScrool);
+            },
+            destroyed() {
+                window.removeEventListener('scroll', this.handleScrool)
+            },
+            created() {
+                this.engineer = engineer;
+                this.first = first;
+                this.second = second;
+                this.third = third;
+                this.study = study;
+                this.student = student;
+                this.problem = problem;
+
+            },
+
+        })
+    </script>
+</body>
+
+</html>

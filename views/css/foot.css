@@ -1,0 +1,80 @@
+/*底部*/
+.footer{
+    height: 100px;
+    background: #000;
+    color: #ccc;
+    font-size: 12px;
+
+}
+.footer .foots{
+    position: absolute;
+    left: 120px;
+    width: 1150px;
+    margin: 0 auto;
+}
+.footer .foot{
+    margin: 30px 0;
+}
+.footer .foot .footlist{
+    display: flex;
+    line-height: 30px;
+}
+.footer .foot .footlist li{
+    padding-right: 15px;
+}
+.footer .foot .footlist li:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.footer .footpic{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    align-items: center;
+}
+.footer .footpic span{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer .footpic span:nth-child(1):hover + .mkwcode{
+    display: block;
+}
+.footer .footpic .mkwcode{
+    display: none;
+    position: absolute;
+    bottom:50px;
+    right: 94px;
+    width: 166px;
+    height: 200px;
+    background: url("../img/free/fairy.png") no-repeat 8px -0px;
+}
+.footer .footpic .mkwcode:after{
+    content: "";
+    clear: both;
+    display: inline-block;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    transform:rotate(180deg);
+    position: relative;
+    bottom:-200px;
+    right: -72px;
+
+}
+.footer .footpic span:hover{
+    color: #fff;
+}
+.footer .footpic span:nth-child(1){
+    background: url("../img/free/fairy.png") no-repeat 8px -268px;
+}
+.footer .footpic span:nth-child(3){
+    background: url("../img/free/fairy.png") no-repeat 8px -312px;
+}
+.footer .footpic span:nth-child(4){
+    background: url("../img/free/fairy.png") no-repeat 8px -354px;
+}

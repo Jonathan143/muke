@@ -1,0 +1,610 @@
+{
+    "recommend": [{
+            "classify": "Python",
+            "title": "全网最热Python3入门+进阶 更快上手实际开发",
+            "imgSrc": "images/index/59b8a486000107fb05400300.jpg",
+            "subTitle": "实战 初级",
+            "num": "6733",
+            "price": "366.00"
+        },
+        {
+            "classify": "React",
+            "title": "React Native技术精讲与高质量上线APP开发",
+            "imgSrc": "images/index/5adfe05e00012ecd05400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "1568",
+            "price": "399.00"
+        },
+        {
+            "classify": "算法",
+            "title": "BAT大牛亲授--个性化推荐算法实战",
+            "imgSrc": "images/index/58f57d200001461105400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "21",
+            "price": "399.00"
+        },
+        {
+            "classify": "微服务",
+            "title": "Spring Cloud微服务实战",
+            "imgSrc": "images/index/5a9ca4e80001786305400300.jpg",
+            "subTitle": "实战 高级",
+            "num": "2624",
+            "price": "366.00"
+        },
+        {
+            "classify": "数学",
+            "title": "高等数学-学习算法/人工智能/大数据的第一步",
+            "imgSrc": "images/index/5be176260001720e06000338.jpg",
+            "subTitle": "实战 初级",
+            "num": "359",
+            "price": "266.00"
+        }
+    ],
+
+    "newRec": [{
+            "classify": "深度学习",
+            "title": "深度学习之目标检测常用算法原理+实践精讲",
+            "imgSrc": "images/index/5bfb523c0001290905400300.jpg",
+            "subTitle": "实战 高级",
+            "num": "17",
+            "price": "499.00"
+        },
+        {
+            "classify": "Vue.js",
+            "title": "Vue.js 2.5 + cube-ui 重构饿了么 App",
+            "imgSrc": "images/index/5becd5ad0001b89306000338.jpg",
+            "subTitle": "实战 中级",
+            "num": "6996",
+            "price": "198.00"
+        },
+        {
+            "classify": "测试",
+            "title": "基于LNMP的测试工具环境部署",
+            "imgSrc": "images/index/5be01b1f000121dd05400300-240-135.jpg",
+            "subTitle": "实战 初级",
+            "num": "1635",
+            "price": "免费"
+        },
+        {
+            "classify": "自动化测试",
+            "title": "功能测试转型必备课程 零基础入门Web自动化测试",
+            "imgSrc": "images/index/5bfd070e0001f11606000338.jpg",
+            "subTitle": "实战 初级",
+            "num": "3",
+            "price": "288.00"
+        },
+        {
+            "classify": "Java",
+            "title": "Socket网络编程进阶与实战",
+            "imgSrc": "images/index/5bc3f1420001abf206000338.jpg",
+            "subTitle": "实战 中级",
+            "num": "611 ",
+            "price": "348.00"
+        },
+        {
+            "classify": "SpringBoot",
+            "title": "RocketMQ核心技术精讲与高并发抗压实战",
+            "imgSrc": "images/index/5bd975330001720c05400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "107",
+            "price": "399.00"
+        },
+        {
+            "classify": "Redis",
+
+            "title": "redis计数器与数量控制",
+            "imgSrc": "images/index/5bd2aff70001de4906000338-240-135.jpg",
+            "subTitle": "入门",
+            "num": "2995",
+            "price": "免费"
+        },
+        {
+            "classify": "小程序",
+            "title": "全网首发 商业级支付宝小程序入门与实战",
+            "imgSrc": "images/index/5bf2187300015bd405400300.jpg",
+            "subTitle": "实战 初级",
+            "num": "23",
+            "price": "299.00"
+        },
+        {
+            "classify": "React.JS",
+            "title": "React高级教程之高阶组件",
+            "imgSrc": "images/index/5becd2990001215b06000338-240-135.jpg",
+            "subTitle": "高级",
+            "num": "1591 ",
+            "price": "免费"
+        },
+        {
+            "classify": "React.JS 区块链",
+            "title": "Nodejs + React 实战开发区块链慕课Dapp 专门为...",
+            "imgSrc": "images/index/5bd2f92e0001930506000338.jpg",
+            "subTitle": "实战 中级",
+            "num": "63",
+            "price": "348.00"
+        }
+    ],
+
+    "introduction": [{
+            "classify": "Web前端攻城狮培养计划",
+            "title": "前端零基础入门",
+            "imgSrc": "images/index/59030cc50001144806000338.jpg",
+            "subTitle": "就业班5步／33课",
+            "num": "6500",
+            "price": "568.00"
+        },
+        {
+            "classify": "JAVA攻城狮培养计划",
+            "title": "Java零基础入门",
+            "imgSrc": "images/index/58c7b92d0001608406000338.jpg",
+            "subTitle": "就业班3步／27课",
+            "num": "6703",
+            "price": "358.00"
+        },
+        {
+            "classify": "Android攻城狮培养计划",
+            "title": "Android零基础入门",
+            "imgSrc": "images/index/585243df00014f2406000338.jpg",
+            "subTitle": "就业班5步／43课",
+            "num": "2310",
+            "price": "499.00"
+        },
+        {
+            "classify": "大数据",
+            "title": "Sqoop入门实践",
+            "imgSrc": "images/index/5b8cf6cf00011ca906000338-240-135.jpg",
+            "subTitle": "入门",
+            "num": "1357",
+            "price": "免费"
+        },
+        {
+            "classify": "算法 数学",
+            "title": "专为程序员设计的线性代数课程",
+            "imgSrc": "images/index/5b5835a60001907e05400300.jpg",
+            "subTitle": "实战 初级",
+            "num": "857 ",
+            "price": "348.00"
+        },
+        {
+            "classify": "JAVA攻城狮培养计划",
+            "title": "SSM主流框架入门与综合项目实战",
+            "imgSrc": "images/index/5acd69bb000103d706000338.jpg",
+            "subTitle": "就业班4步／19课",
+            "num": "1397",
+            "price": "628.00"
+        },
+        {
+            "classify": "设计工具 产品交互",
+            "title": "社交类app设计入门",
+            "imgSrc": "images/index/5bd7f8f70001dfd806000336-240-135.jpg",
+            "subTitle": "初级",
+            "num": "3638",
+            "price": "免费"
+        },
+        {
+            "classify": "PHP攻城狮培养计划",
+            "title": "PHP小白零基础入门",
+            "imgSrc": "images/index/5993e8880001521206000338.jpg",
+            "subTitle": "就业班5步／26课",
+            "num": "431",
+            "price": "628.00"
+        },
+        {
+            "classify": "深度学习 人工智能",
+            "title": "深度学习之神经网络入门最佳路径",
+            "imgSrc": "images/index/5bd8157a0001a7a506000336-240-135.jpg",
+            "subTitle": "初级",
+            "num": "2763 ",
+            "price": "免费"
+        },
+        {
+            "classify": "Html5 小程序",
+            "title": "微信小程序入门与实战 常用组件API开发技巧项目实战",
+            "imgSrc": "images/index/583e42fb0001e04f05400300.jpg",
+            "subTitle": "实战 初级",
+            "num": "15621",
+            "price": "149.00"
+        }
+    ],
+
+    "skill": [{
+            "classify": "PHP Swoole",
+            "title": "韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台",
+            "imgSrc": "images/index/5ab0fd1400010d7d10800600.jpg",
+            "subTitle": "实战 中级",
+            "num": "1263",
+            "price": "299.00"
+        },
+        {
+            "classify": "Linux SSM",
+            "title": "从0开始 独立完成企业级Java电商网站开发",
+            "imgSrc": "images/index/58f57d200001461105400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "6239",
+            "price": "348.000"
+        },
+        {
+            "classify": "iOS",
+            "title": "iOS手机深度学习",
+            "imgSrc": "images/index/5b5b00d10001d05205400300-240-135.jpg",
+            "subTitle": " 高级",
+            "num": "3351",
+            "price": "免费"
+        },
+        {
+            "classify": "iOS",
+            "title": "新浪微博资深大牛全方位剖析 iOS 高级面试",
+            "imgSrc": "images/index/5abe148300014c3305400300.jpg",
+            "subTitle": "实战 高级",
+            "num": "668",
+            "price": "366.00"
+        },
+        {
+            "classify": "React.JS",
+            "title": "React 16.4 开发简书项目 从零基础入门到实战",
+            "imgSrc": "images/index/5b3082da0001d7e905400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "1194 ",
+            "price": "299.00"
+        },
+        {
+            "classify": "PHP",
+            "title": "SVN从入门到放弃",
+            "imgSrc": "images/index/5934bac20001a5c906000338-240-135.jpg",
+            "subTitle": "高级",
+            "num": "17958",
+            "price": "免费"
+        },
+        {
+            "classify": "Java",
+            "title": "java设计模式精讲 Debug 方式+内存分析",
+            "imgSrc": "images/index/5b723de80001ec9b05400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "1030 ",
+            "price": "299.00"
+        },
+        {
+            "classify": "Java 微服务",
+            "title": "微服务架构在二手交易平台（转转）中的实践",
+            "imgSrc": "images/index/586395f4000145e006000338-240-135.jpg",
+            "subTitle": "高级",
+            "num": "22877",
+            "price": "免费"
+        },
+        {
+            "classify": "SpringBoot 微服务",
+            "title": "Spring Boot 2.0深度实践之核心技术篇",
+            "imgSrc": "images/index/5b4c817f0001945605400300.jpg",
+            "subTitle": "实战 高级",
+            "num": "952",
+            "price": "366.00"
+        },
+        {
+            "classify": "Java 大数据",
+            "title": "Kafka流处理平台",
+            "imgSrc": "images/index/5b8ce427000121b406000338-240-135.jpg",
+            "subTitle": "中级",
+            "num": "9684",
+            "price": "免费"
+        }
+    ],
+
+    "technology": [{
+            "classify": "深度学习 自然语言处理",
+            "title": "NLP 实践 TensorFlow 打造聊天机器人",
+            "imgSrc": "images/index/5b6910d30001adad05400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "302",
+            "price": "348.00"
+        },
+        {
+            "classify": "深度学习 计算机视觉",
+            "title": "OpenCV+TensorFlow 入门人工智能图像处理",
+            "imgSrc": "images/index/5a9f4c2e00010ce205400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "472",
+            "price": "299.00"
+        },
+        {
+            "classify": "云计算",
+            "title": "2018 AWS技术峰会 自动化运维、微服务及容器技术分论坛",
+            "imgSrc": "images/index/5be8f5a40001482306000338-240-135.jpg",
+            "subTitle": " 高级",
+            "num": "789",
+            "price": "免费"
+        },
+        {
+            "classify": "机器学习 深度学习",
+            "title": "基于Python玩转人工智能最火框架 TensorFlow应用实践",
+            "imgSrc": "images/index/5a5ddeda000145b405400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "1617",
+            "price": "299.00"
+        },
+        {
+            "classify": "深度学习 计算机视觉",
+            "title": "深度学习之神经网络（CNN/RNN/GAN）算法原理+实战",
+            "imgSrc": "images/index/5b56952600014eb005400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "620",
+            "price": "466.00"
+        },
+        {
+            "classify": "深度学习 人工智能",
+            "title": "深度学习之神经网络入门最佳路径",
+            "imgSrc": "images/index/5bd8157a0001a7a506000336-240-135.jpg",
+            "subTitle": "初级",
+            "num": "2763",
+            "price": "免费"
+        },
+        {
+            "classify": "大数据 Hadoop",
+            "title": "10小时入门大数据",
+            "imgSrc": "images/index/59eebab000013cce05400300.jpg",
+            "subTitle": "实战 初级",
+            "num": "1434",
+            "price": "188.00"
+        },
+        {
+            "classify": "深度学习 计算机视觉",
+            "title": "TensorFlow与Flask结合打造手写体数字识别",
+            "imgSrc": "images/index/5afe7ffa00018fff06000338-240-135.jpg",
+            "subTitle": "中级",
+            "num": "9310",
+            "price": "免费"
+        },
+        {
+            "classify": "算法 机器学习",
+            "title": "Python3入门机器学习 经典算法与应用",
+            "imgSrc": "images/index/5a39cd3f0001c09805400300.jpg",
+            "subTitle": "实战 中级",
+            "num": "1962",
+            "price": "499.00"
+        },
+        {
+            "classify": "机器学习 自然语言处理",
+            "title": "自然语言处理（NLP）入门与实践",
+            "imgSrc": "images/index/5bd8219400016e5e06000336-240-135.jpg",
+            "subTitle": "初级",
+            "num": "2352",
+            "price": "免费"
+        }
+    ],
+
+    "articles": [{
+            "title": "抛开 Vue、React、JQuery 这类第三方js，我们该怎么写代",
+            "imgSrc": "images/index/5bf3a0390001c53102720272-210-130.jpg",
+            "text": "首先感谢React、Vue、Angular、Cycle、JQuery 等这些第三方js为开发带来的便利。 以下将Vue、React这类常用的框架（库）统称为“第三方js”。 <!-- more --> 第三方js的现状 无论是新入行的小白还是有经验的开发者，前端圈里的人一定听过这类第三方js的大名。 一方面是因为它们实在太火了： 各种文章对框架进行对比、源码解析...",
+            "read": "6399",
+            "share": "66"
+        },
+        {
+            "title": "SSM+Netty实现软硬件通信，真实项目案例",
+            "imgSrc": "images/index/5bdba40000016f2410800556-210-130.jpg",
+            "text": "前言 今天分享的是MySelf自己以前工作项目中的一个模块实例实现的思路还有流程，在这过程中也是遇到了很多问题，能过顺利解决也是团队沟通的结果。 项目模拟背景：假设我们有一个软件平台，我们的线下产品是一些探测器（传感器）硬件，它们需要在一定范围下定时上传数据给服务器，而且服务器可能还需要对他们下达命令（针对单个），或者广播指令（针对全部），且可能是在管理员的后台下令，也可能是在用户的小程序（APP...",
+            "read": "1746",
+            "share": "8"
+        },
+        {
+            "title": "全网最详细【Java学习路线】，新手该如何一步步的学习 Java",
+            "imgSrc": "images/index/5bd1355a0001a27c04000294-210-130.jpg",
+            "text": "新手该如何一步步的学习 Java？ 如果真的想学Java，最好要循序渐进，有章有法的学习它！ 今天小慕就不说一些学习方法和技巧了，直接来谈每个阶段要学习的内容。 首先，给大家分享一张以 企业岗位需求为导向 Java工程师技能点图 根据 Java工程师技能点图，我们分为四个阶段： 第一阶段 ：Java基础 Java基础语法学习知识 Java中的main()方法详解 Java中的运算符 Java中...",
+            "read": "11471",
+            "share": "127"
+        },
+        {
+            "title": "有奖征文010期 | 作为一枚程序员，来聊聊你的真实工作/生活状态是怎",
+            "imgSrc": "images/index/5becde7e000101b902000200-210-130.jpg",
+            "text": "提到程序员的日常工作，我们脑中就会浮现出很多画面感敲强的场景跟产品打架？疯狂找bug？夜深人静灵感凸显？与此同时，面对一线城市巨大的生活压力，你有想过逃离吗？相信你一定有很多心得和体会，那就赶紧一吐为快，还有编程图书免费领取哦！！【征稿说明】作为一枚程序员，你现在的工作/生活状态是怎样的，聊一聊？程序员工作这么忙，你是怎么找到女朋友的（别说是new的）？面对一线城市巨大的生活压力，你为什么执意留在...",
+            "read": "1420",
+            "share": "5"
+        },
+        {
+            "title": "秋招季，用Python分析深圳程序员工资有多高？",
+            "imgSrc": "images/index/5be39f9c00016a4f40003000-210-130.jpg",
+            "text": "源码地址 概述 前言 统计结果 爬虫技术分析 爬虫代码实现 爬虫分析实现 后记 预告 前言 多图预警、多图预警、多图预警。秋招季，毕业也多，跳槽也多。我们的职业发展还是要顺应市场需求，那么各门编程语言在深圳的需求怎么呢？工资待遇怎么样呢？zone 在上次写了这篇文章之后【用Python告诉你深圳房租有多高】，想继续用 Python 分析一下，当前深圳的求职市场怎么样？于是便爬取了某钩招聘数据。以下...",
+            "read": "1598",
+            "share": "10"
+        },
+        {
+            "title": "良心推荐【Web前端学习路线】，看小白学前端如何月入2W+！",
+            "imgSrc": "images/index/5bf3a0390001c53102720272-210-130.jpg",
+            "text": "Web 前端怎样入门？ 这一波良心推荐的【Web前端学习路线】干货，不谈虚的，直接来谈每个阶段要学习的内容 想入门前端的小伙伴们，那就放马过来吧！ 首先，给大家分享一张以 企业岗位需求为导向 Web前端技能点图 根据 Web前端工程师技能点图，我们分为四个阶段： 第一阶段：前端基础 （HTML / CSS / JavaScript / jQuery） 初识HTML+CSS 【学习笔记】...",
+            "read": "8673",
+            "share": "139"
+        }
+    ],
+    "problem": [{
+            "title": "【有奖问答】与大咖交流前端JS与框架开发，免费赢取前端图书（11.28-12.4）",
+            "text": "我觉得不管学习哪门语言，到后面总还是要学习一下规范，程序员的素养必不可少啊！！",
+            "num": "139"
+        },
+        {
+            "title": "​如何防止用户未登录，直接用url访问页面。",
+            "text": "我觉得不管学习哪门语言，到后面总还是要学习一下规范，程序员的素养必不可少啊！！",
+            "num": "1"
+        },
+        {
+            "title": "java好学吗.??pp",
+            "text": "程序员的素养必不可少啊！！",
+            "num": "198"
+        },
+        {
+            "title": "这写是怎么回事？",
+            "text": "!啦啦啦！！",
+            "num": "1"
+        },
+        {
+            "title": "话说，大家想编程的最初初衷是什么",
+            "text": "说兴趣的话有没有人打我....",
+            "num": "462"
+        },
+        {
+            "title": "各位猿或者媛，一般几点睡啊。有时忍住头痛看java到很晚，第二天就头痛一整天",
+            "text": "没有什么事情是需要熬夜完成的",
+            "num": "305"
+        }
+    ],
+    "tecItems": [
+        {
+            "name1": "DellLee",
+            "src1":"images/index/5abe468b0001664107390741-100-100.jpg",
+            "title1": "Web前端工程师",
+            "text1": "BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！",
+            "name2": "风落几番",
+            "src2":"images/index/5b2a0c4d0001029d09600960-100-100.jpg",
+            "title2": "全栈工程师",
+            "text2": "蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。",
+            "name3": "大漠风",
+            "src3":"images/index/5b1e461a000140a007570649-100-100.jpg",
+            "title3": "全栈工程师",
+            "text3": "15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资",
+            "name4": "河畔一角",
+            "src4":"images/index/587dd3db0001488708521136-100-100.jpg",
+            "title4": "Web前端工程师",
+            "text4": "六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!",
+            "name5": "bennyhuo",
+            "src5":"images/index/584ff8bf0001609c01000100-100-100.jpg",
+            "title5": "移动开发工程师",
+            "text5":"北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。"
+        },
+        {
+            "name1": "风间影月",
+            "src1":"images/index/5a0c5df20001a1cb05800580-100-100.jpg",
+            "title1": "全栈工程师",
+            "text1": "创业公司技术总监, 9年开发和技术管理经验。SUN认证SCJP、PMP、MCP认证。主要从事后端技术和架构领域，有丰富的电商平台与物流平台核心系统的架构设计和开发经验。",
+            "name2": "sqlercn",
+            "src2":"images/index/5ad7144100017a5e07410741-100-100.jpg",
+            "title2": "数据库工程师",
+            "text2": "高级数据库工程师（DBA），从事数据库管理工作多年，曾就职于聚美优品、猫扑、TOM等多家大型互联网公司，进行过千万级的数据处理，对大数据业务、高并发时数据优化积累了大量丰富的经验。",
+            "name3": "阿神_",
+            "src3":"images/index/5b614d33000131ac03000331-100-100.jpg",
+            "title3": "JAVA开发工程师",
+            "text3": "10余年JAVA架构设计与研发经验。目前就职于国内知名O2O互联网公司，从事基础架构设计研发工作。擅长系统架构，应用架构和基础组件架构设计，对高并发、高可用、分布式系统设计有着丰富的经验和实战，精通互联网Java主流技术。",
+            "name4": "伏草惟存",
+            "src4":"images/index/545863cd0001b72a02200220-100-100.jpg",
+            "title4": "算法工程师",
+            "text4": "现任职于某科研院所，研究方向是自然语言处理和机器学习。曾参与国家自然基金项目1项，省级科研项目7项，发表论文多篇。多年来一直从事科研及项目开发，阿里云认证技术专家，曾出版专著《自然语言处理理论与实战》。!",
+            "name5": "正十七_卢云",
+            "src5":"images/index/5b508dd00001630307410721-100-100.jpg",
+            "title5": "软件工程师",
+            "text5":"目前供职于google，技术方向是深度学习，具有五年工作经验，曾先后在百度、腾讯工作。对机器学习算法抱有强烈的兴趣，先后从事过图像检索与分类、文本分类、人脸识别、广告点击率预估、图像翻译等方面的项目，有丰富的炼丹经验。讲课风格干货满满，希望大家能通过我的课程得到成长进步。"
+        },
+        {
+            "name1": "7七月",
+            "src1":"images/index/54584e2c00010a2c02200220-100-100.jpg",
+            "title1": "全栈工程师",
+            "text1": "多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究",
+            "name2": "liuyubobobo",
+            "src2":"images/index/5347593e00010cfb01400140-100-100.jpg",
+            "title2": "全栈工程师",
+            "text2": "创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。",
+            "name3": "ustbhuangyi",
+            "src3":"images/index/577baef700019c4501400140-100-100.jpg",
+            "title3": "全栈工程师",
+            "text3": "北京科技大学毕业，计算机专业硕士。对前端工程化，前后端性能优化有丰富的经验。曾任职百度、滴滴，现担任Zoom前端架构师。慕课网明星讲师，Vue.js 布道者，《Vue.js 技术揭秘》独立作者，《Vue.js 权威指南》主要作者。开源项目 better-scroll 作者，并主导滴滴开源项目 cube-ui，建立团队技术博客。",
+            "name4": "慕课官方号",
+            "src4":"images/index/5b88f1f50001688401500150-100-100.jpg",
+            "title4": "页面重构设计",
+            "text4": "慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。!",
+            "name5": "Oeasy",
+            "src5":"images/index/53855e6f0001034501400140-100-100.jpg",
+            "title5": "页面重构设计",
+            "text5":"他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿"
+        },
+        {
+            "name1": "DellLee",
+            "src1":"images/index/5abe468b0001664107390741-100-100.jpg",
+            "title1": "Web前端工程师",
+            "text1": "BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！",
+            "name2": "风落几番",
+            "src2":"images/index/5b2a0c4d0001029d09600960-100-100.jpg",
+            "title2": "全栈工程师",
+            "text2": "蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。",
+            "name3": "大漠风",
+            "src3":"images/index/5b1e461a000140a007570649-100-100.jpg",
+            "title3": "全栈工程师",
+            "text3": "15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资",
+            "name4": "河畔一角",
+            "src4":"images/index/587dd3db0001488708521136-100-100.jpg",
+            "title4": "Web前端工程师",
+            "text4": "六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!",
+            "name5": "bennyhuo",
+            "src5":"images/index/584ff8bf0001609c01000100-100-100.jpg",
+            "title5": "移动开发工程师",
+            "text5":"北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。"
+        }
+
+    ],
+    "pop": [{
+            "title": "chrismorgen",
+            "text": "风骚课程学霸",
+            "src": "./images/index/545861e40001199702200220-100-100.jpg"
+        },
+        {
+            "title": "pardon110",
+            "text": "神秘解疑大神",
+            "src": "./images/index/533e4ca50001117901990200-100-100.jpg"
+        },
+        {
+            "title": "慕少0579507",
+            "text": "智慧文章王者",
+            "src": "./images/index/545845d30001ee8a02200220-100-100.jpg"
+        },
+        {
+            "title": "now_or_never",
+            "text": "慕课第一土豪",
+            "src": "./images/index/tuhao.png"
+        }
+    ],
+    "popimg":[
+        {
+            "src":"./images/index/54584eff000195a302200220-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5bf81f8500019f2e05000500-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5b3c3d0b000158f406000337-100-100.jpg"
+        },
+        {
+            "src":"./images/index/533e4c2300012ab002200220-100-100.jpg"
+        },
+        {
+            "src":"./images/index/545861c80001141e02200220-100-100.jpg"
+        },
+        {
+            "src":"./images/index/58a44d2f0001ff4802790279-100-100.jpg"
+        },
+        {
+            "src":"./images/index/54584cfb0001308402200220-100-100.jpg"
+        },
+        {
+            "src":"./images/index/533e4d2600013fe202000200-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5333a1a90001c8d802000200-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5333a1d100010c2602000200-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5bff4a3e0001a20e10801080-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5a4ae8860001f12903260326-100-100.jpg"
+        },
+        {
+            "src":"./images/index/545867630001795d02200220-100-100.jpg"
+        },
+        {
+            "src":"./images/index/58dbb3630001b10b03840384-100-100.jpg"
+        },
+        {
+            "src":"./images/index/5b60202f000159e305330300-100-100.jpg"
+        },
+        {
+            "src":"./images/index/533e4c5600017c5b02010200-100-100.jpg"
+        }
+        
+    ]
+}

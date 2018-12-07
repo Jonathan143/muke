@@ -1,0 +1,243 @@
+.recruitheader{
+    box-shadow: 0 8px 16px 0 rgba(28,31,33,.1)
+}
+.navmiddle{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+    border-bottom:1px solid #ccc ;
+
+}
+.navmiddle>img{
+    width: 192px;
+    height: 48px;
+    margin-top:15px ;
+}
+.navmiddle>p{
+    width: 370px;
+    font-size: 16px;
+    padding-left: 200px;
+    font-weight: bold;
+}
+.navmiddle>p span{
+    padding:0 5px 5px;
+    margin: 0 20px;
+}
+.navmiddle>p span:nth-child(1){
+    color: #149cb8;
+    border-bottom: 3px solid #149cb8;
+}
+.navbot{
+    padding-bottom:30px ;
+}
+.navbot .search{
+    width: 704px;
+    height: 50px;
+    background: #f3f5f6;
+    margin: 30px auto 10px;
+    border-radius: 10px;
+}
+.navbot .search>select{
+    padding:10px;
+    outline: none;
+    border: none;
+    background: #f3f5f6;
+    margin-top: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.navbot .search>span{
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.navbot .search>a{
+    display: inline-block;
+}
+.navbot .search>a input{
+    margin-top: 5px;
+    width: 500px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background: #f3f5f6;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.navbot .search>button{
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    border: 0;
+    margin-left: 18px;
+    background: #149cb8;
+    color: #fff;
+    vertical-align: middle;
+    border-radius:0px 10px 10px 0px ;
+}
+
+.hotjob{
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 16px;
+}
+.hotjob>ul{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    color: #149cb8;
+}
+
+/*招聘内容*/
+.recruitCon{
+    background: #F3F5F6;
+    padding: 30px 0 50px;
+}
+.recruitCon .recruitcon{
+    width: 1200px;
+    margin: 0 auto;
+}
+.recruitCon .recruitcon .leftcon{
+    width: 800px;
+}
+.recruitCon .leftcon .zhaopin img{
+    width: 800px;
+    height: 160px;
+    border-radius: 20px;
+}
+.joblist>li{
+    padding: 28px 32px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(28,31,33,.1);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+.joblist>li:hover{
+    box-shadow: 0 8px 16px rgba(28,31,33,.2)
+}
+.joblist>li .synopsis{
+    width: 430px;
+    border-right: 1px solid #ccc;
+}
+.joblist>li .synopsis .occupation>span{
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.joblist>li .synopsis .occupation>time{
+    padding-left: 20px;
+}
+.joblist>li .synopsis>p:nth-child(2){
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.joblist>li .synopsis>p:nth-child(2)>span:nth-child(1){
+    color: #fa0;
+}
+.joblist>li .synopsis>p:nth-child(2)>i{
+    /*padding: 0 5px;*/
+}
+.joblist>li .synopsis>p:nth-child(3){
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(84,92,99,.1);
+    border-radius: 10px;
+}
+.joblist>li .brief{
+    /*width: 250px;*/
+}
+.joblist>li .brief>.charitable{
+    width: 100%;
+    height: 90px;
+
+}
+.joblist>li .brief img{
+    width:56px;
+    height: 56px;
+    border-radius: 10px;
+}
+.joblist>li .brief .charitable p:nth-child(1)>span{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+/*内容左边*/
+.free{
+    width: 300px;
+    padding: 28px 24px;
+    background: rgba(20,156,184,.06);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.free>h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #149cb8;
+}
+.free>p:nth-child(2){
+    padding: 20px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.free>p:nth-child(3){
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #149cb8;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.meet{
+    width: 300px;
+    padding: 28px 24px;
+    background: #ccc;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.meet>p:nth-child(1){
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.meet>p:nth-child(2){
+    font-size: 12px;
+    line-height: 20px;
+}
+.meet>p:nth-child(3){
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.Recommend{
+    width: 348px;
+}
+.Recommend>dl>dt{
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.Recommend>dl>dd{
+    display: inline-block;
+    width: 160px;
+    height: 96px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+}
+.Recommend>dl>dd:hover{
+    box-shadow: 0 4px 8px 0 rgba(28,31,33,.1)
+}
+.Recommend>dl>dd>img{
+    width: 100%;
+    height: 100%;
+}

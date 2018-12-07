@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/node.css">
+    <title>IT技术文章_慕课网手记</title>
+</head>
+
+<body>
+    <div class="navtop ">
+        <div class="nav mg">
+            <ul class="leftnavtop ">
+                <li><a href="../index.html">慕课网首页</a></li>
+                <li><a href="./free.html">免费课程</a></li>
+                <li><a href="./free.html">实战课程</a></li>
+                <li><a href="./job.html">就业班</a></li>
+                <li><a href="#">猿问</a></li>
+                <li><a href="./node.html" class="only">手记</a></li>
+                <li><a href="./recruit.html">猿聘</a></li>
+            </ul>
+            <ul class="rightnavtop ">
+                <li>
+                    <a href="./download.html">下载App
+                        <div class="download">
+                            <div class="topdown">
+                                <div class="first">
+                                    <p>慕课网浏览器-pc客户端</p>
+                                    <p class="radius"><i class="icon iconfont icon-win"></i> Windows版</p>
+                                    <p>Mac版开发中，敬请期待...</p>
+                                </div>
+                            </div>
+                            <div class="botdown">
+                                <p>慕课网App-随时随地学编程</p>
+                                <div class="appdown clearfix">
+                                    <div class="appcode fl">
+                                        <img src="./images/details/code.png" alt="">
+                                    </div>
+                                    <div class="appurl fr">
+                                        <p class="radiu"><i class="icon iconfont icon-pingguo"></i> App Store下载</p>
+                                        <p class="radiu"><i class="icon iconfont icon-anzhuo"></i> Android下载</p>
+                                        <p>扫描下载慕课网APP</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="gouwuche icon iconfont icon-icon_gouwuchemi"></i>
+                        购物车
+                        <div class="addcar">
+                            <div class="mycar">
+                                <span>我的购物车</span>
+                                <span>已加入0门课程</span>
+                            </div>
+                            <hr>
+                            <div class="concar">
+                                <p class="icon iconfont icon-icon_gouwuchemi    "></p>
+                                <p>购物车里空空如业</p>
+                                <p>快去这里选购物你中意的课程</p>
+                                <p class="red">实战课程</p>
+                                <p class="red">就业班</p>
+                            </div>
+                            <hr>
+                            <div class="footcar">
+                                <span>我的订单中心</span>
+                                <span>去购物车</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+                <li><a href="#">登录</a>/<a href="#">注册</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="node">
+        <header>
+            <div class="hd">
+                <a href="#" class="logo"><img src="../images/node/article-logo.png" alt=""></a>
+                <div class="hd-right">
+                    <div class="search" :class="{'suggest-active':isActive}">
+                        <div class="search-text">
+                            <input @focus="search" @blur="notActive" type="text" placeholder="搜索感兴趣的知识和文章">
+                        </div>
+                        <div class="search-btn">
+                            <i class="iconfont icon-search" :class="{'search-color':isActive}"></i>
+                        </div>
+                    </div>
+                    <div class="hd-write">
+                        <a href="#">写文章</a>
+                        <a href="#">动态圈</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cont">
+            <aside class="aside">
+                <ul>
+                    <li v-for="(mitem,index) in mItems" :key="index"><a href="#">{{mitem}}</a></li>
+                </ul>
+            </aside>
+            <article class="article">
+                <div class="article-top">
+                    <div class="left">
+                        <img src="../images/node/5c00acd7000104f460203386.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <img src="../images/node/5c00af1e0001124b06000338.jpg" alt="">
+                        <img src="../images/node//5c00b03600016cfa06580439.jpg" alt="">
+                    </div>
+                </div>
+                <div class="article-cont">
+                    <div class="article-cont-item" v-for="(article,index) in articles" :key="index">
+                        <img :src="article.imgSrc" alt="">
+                        <div class="article-cc">
+                            <h2>{{article.title}}</h2>
+                            <div class="ac">
+                                <div class="article-info">
+                                    <span>{{article.moco}}</span><em><i class="iconfont icon-yanjing"></i>{{article.watch}}</em><em>{{article.author}}</em><em
+                                        v-for="(item,index) in article.class" :key="index">{{item}}</em>
+                                </div>
+                                <div class="article-time">
+                                    {{article.time}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="section">
+                <div class="carefully">
+                    <a href="#">
+                        <div class="sevenImg"></div>
+                    </a>
+                    <a href="#">
+                        <div class="thirtyImg"></div>
+                    </a>
+                </div>
+                <div class="hotArticle">
+                    <div class="top-title">
+                        <h3>热门文章</h3><a href="#">更多<i class="iconfont icon-xiangyou-copy"></i></a>
+                    </div>
+                    <div class="top" v-for="(TOPArticle,index) in TOPArticles">
+                        <img :src="TOPArticle.imgSrc" alt="">
+                        <a href="#">{{TOPArticle.title}}</a>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="top-title">
+                        <h3>推荐作者</h3><a href="#">更多<i class="iconfont icon-xiangyou-copy"></i></a>
+                    </div>
+                    <div class="author-info" v-for="(author,index) in authors">
+                        <img :src="author.avatarSrc" alt="">
+                        <div class="author-name">
+                            <div class="attention">
+                                <h2>{{author.author}}</h2>
+                                <span><i class="iconfont icon-jia"></i>关注</span>
+                            </div>
+                            <p><em>{{author.sum}}篇文章</em><em>{{author.fan}}个粉丝</em></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-nav">
+            <ul>
+                <li><i class="iconfont icon-fankui"></i><span>意见反馈</span></li>
+                <li><i class="iconfont icon-bangzhu"></i><span>帮助中心</span></li>
+                <li><i class="iconfont icon-diedaisanicon45"></i><span>app下载</span>
+                    <div class="qcrapp"></div>
+                </li>
+                <li><i class="iconfont icon-Wchat"></i><span>官方微信</span>
+                    <div class="qcrw"></div>
+                </li>
+                <li id="goTop" @click="backTop" :class="{'backShow':isShow}"><i class="iconfont icon-icon"></i><span>返回顶部</span></li>
+            </ul>
+        </div>
+        <!-- <div class="ft">
+            <footer class="footer">
+                <div class="ft-left">
+                    <ul>
+                        <li>企业合作</li>
+                        <li>人才招聘</li>
+                        <li>联系我们</li>
+                        <li>讲师招募</li>
+                        <li>帮助中心</li>
+                        <li>意见反馈</li>
+                        <li>慕课大学</li>
+                        <li>友情链接</li>
+                    </ul>
+                    <small>© 2018 imooc.com 京ICP备 12003892号-11</small>
+                </div>
+                <div class="ft-right">
+                    <ul>
+                        <li><i class="iconfont icon-weixin1"></i><span>官方公众号</span></li>
+                        <li><i class="iconfont icon-5"></i><span>官方微博</span></li>
+                    </ul>
+                </div>
+            </footer>
+        </div> -->
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#node',
+            data() {
+                return {
+                    isActive: false,
+                    mItems: [],
+                    articles: [],
+                    TOPArticles: [],
+                    authors: [],
+                    articlesCopy: [],
+                    clientH: 0,
+                    isShow: false
+                }
+            },
+            methods: {
+                search() {
+                    this.isActive = true;
+                },
+                notActive() {
+                    this.isActive = false;
+                },
+                handleScrool() {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    let article = document.querySelectorAll(".article-cont-item");
+                    let footer = document.querySelector('.footer')
+                    //				    最后一个元素的top
+                    let lastT = article[article.length - 1].offsetTop
+                    if (this.clientH + scrollTop > lastT) {
+                        this.articles = this.articles.concat(this.articlesCopy);
+                    };
+                    if (scrollTop > this.clientH) {
+                        this.isShow = true;
+                    } else {
+                        this.isShow = false;
+                    }
+                },
+                backTop() {
+                    let timer = '';
+                    clearInterval(timer)
+                    timer = setInterval(() => {
+                        document.documentElement.scrollTop -= 100;
+                        if (document.documentElement.scrollTop == 0) {
+                            clearInterval(timer)
+                        }
+
+                    }, 10);
+                }
+            },
+            created() {
+                axios.get('./data.json')
+                    .then((res) => {
+                        this.mItems = res.data.mItem;
+                        this.articles = res.data.article;
+                        this.articlesCopy = res.data.article;
+                        this.TOPArticles = res.data.TOPArticle;
+                        this.authors = res.data.authors;
+                    })
+            },
+            mounted() {
+                this.clientH = document.documentElement.clientHeight;
+                window.addEventListener('scroll', this.handleScrool);
+            },
+            destroyed() {
+                window.removeEventListener('scroll', this.handleScrool)
+            }
+        })
+    </script>
+</body>
+
+</html>

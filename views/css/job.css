@@ -1,0 +1,586 @@
+
+.jobheader .navbot{
+    width: 100%;
+    height: 520px;
+    background: url("../img/job/banner-bg.png") no-repeat;
+    background-size: cover;
+}
+.jobheader .navbot .job-banner{
+    width: 1152px;
+    height: 328px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+.jobheader .job-banner .logo{
+    display: block;
+}
+.jobheader .job-banner .logo img{
+    width:136px;
+    height: 48px;
+    padding-right: 10px;
+}
+.jobheader .job-banner .txt{
+    width: 650px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.jobheader .job-banner .txt .issue{
+    font-size: 16px;
+    letter-spacing: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+    /*text-align: center;*/
+}
+.jobheader .job-banner .txt>h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+}
+.jobheader .job-banner .txt .solve{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+.jobheader .job-banner .caselist li{
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.jobheader .job-banner .caselist li:nth-child(2n){
+    font-size: 24px;
+    margin: 0 24px;
+    line-height: 44px;
+}
+
+/*就业班内容*/
+.jobcon{
+    background: #f3f5f6;
+}
+.jobcon>h2{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.engineer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.engineer .englist{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.engineer .englist li{
+    position: relative;
+    width: 490px;
+    height: 196px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    padding: 40px;
+    background: #fff;
+    box-shadow:  6px 5px 6px 0 rgba(7,17,27,.1);
+    border-radius: 20px;
+}
+/*第二成页面*/
+.engineer .englist .ahover{
+    position: absolute;
+    top:-160px;
+    left:0px;
+    height: 0;
+    overflow: hidden;
+    color: #000;
+    background: #fff;
+    /*overflow: hidden;*/
+
+}
+
+.engineer .englist .ahover .hover-con{
+    width: 490px;
+    font-size: 14px;
+}
+.engineer .hover-con .title{
+    font-size:32px ;
+    font-weight: 700;
+    color: #ff5d00;
+    margin-bottom: 10px;
+}
+.engineer .hover-con span{
+    font-weight: 700;
+}
+.engineer .hover-con .hovercon,.skill{
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.engineer .hover-con .more{
+    width: 230px;
+    padding:5px 0;
+    background:#ff5d00 ;
+    text-align: center;
+    border-radius: 20px;
+
+}
+/*第一层页面*/
+.engineer .englist .engnode{
+    /*display: none;*/
+    position: relative;
+    width: 490px;
+    font-size: 14px;
+
+}
+.engineer .englist .engnode .engcon{
+    width: 300px;
+}
+.engineer .englist .engnode .title{
+    font-size:32px ;
+    font-weight: 700;
+}
+.engineer .englist .engnode .fe{
+    width: 32px;
+    height: 6px;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    background: #ff5d00;
+}
+.engineer .englist .engnode .engimg{
+    position: absolute;
+    top: -26px;
+    right: 0;
+}
+.engineer .englist .engnode .engimg img{
+    width: 200px;
+    height: 200px;
+}
+.engineer .englist .engnode .text{
+    line-height: 30px;
+    color: #545c63;
+}
+.engineer .englist .engnode .boteng{
+    margin-top:25px;
+    color: #545c63;
+}
+/*下边线*/
+.engineer .lines{
+    width: calc(100%);
+    height: 1px;
+    margin: 30px auto 0;
+    /*margin-top: 30px;*/
+    background: #ccc;
+}
+/*鼠标移动到页面上的变化*/
+/*.engineer .englist li:hover .engnode>.hideeng{
+    visibility: hidden;
+}*/
+.engineer .englist li:hover .ahover{
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+    height: 300px;
+    z-index: 99;
+    padding: 40px;
+    box-shadow:  -2px -5px 6px 0 rgba(7,17,27,.1);
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+/*到一定的高度显示在顶部*/
+.employment{
+    position: sticky;
+    top:0;
+    width: 100%;
+    height:80px;
+    background: #6114b8;
+    display: flex;
+    z-index: 999;
+}
+.employment .emplogo img{
+    height: 40px;
+    padding:20px 0 0 40px ;
+}
+.employment .fourtheng{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.employment .fourtheng>div{
+    font-size: 14px;
+    line-height: 80px;
+    color: #ccc;
+    padding: 0 40px;
+    cursor: pointer;
+}
+.employment .fourtheng>div:hover{
+    color: #fff;
+}
+.employment .fourtheng>div:nth-child(1){
+    position: relative;
+}
+.employment .fourtheng>div:hover > .stagelist{
+    display: block;
+}
+.employment .fourtheng .stagelist{
+    display: none;
+    position: absolute;
+    color: #000;
+    width: 356px;
+    height: 300px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px -12px 17px 14px rgba(7,17,27,.1);
+}
+.employment .fourtheng .stagelist li{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 20px;
+}
+.employment .fourtheng .stagelist .stage{
+    height: 40px;
+    line-height: 40px;
+    color: purple;
+    background: rgba(0,0,0,.2);
+    padding: 0 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.employment .Introduction p{
+    width: 250px;
+    padding-left:20px ;
+    height: 25px;
+    line-height: 20px;
+
+}
+.employment .Introduction p:nth-child(1) {
+    font-weight: 700;
+
+}
+.employment .Introduction p:nth-child(2) {
+    padding-top: 5px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+/*培训的区别*/
+.job-con{
+    background: url("../img/job/diff-bg.png");
+    background-size: cover;
+    margin-top:40px;
+
+}
+/*与别的培训不同，我们更在意你的学习质量！*/
+.difference>h2{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 0 42px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.difference>p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*线上线下培训的优缺点*/
+.train{
+    display: flex;
+    justify-content: space-around;
+    width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.train .trains{
+    width: 336px;
+    height: 306px;
+    background: #F6F6F6;
+    padding: 32px;
+    border-radius: 10px;
+}
+.train .trains>h2{
+    font-size:32px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+.train .trains .trainlist li{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    border-bottom: 1px dotted #ccc;
+}
+.train .trainlist li>i{
+    width: 10%;
+    color: rgba(1,1,1,.5);
+}
+.train .trainlist li>p{
+    width: 85%;
+}
+/*为什么慕课网就业班课程能让你学会*/
+
+.job-con .describe>h2{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.job-con .describe .deslist{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin:0 auto;
+    padding-bottom: 30px;
+}
+.job-con .describe .deslist li{
+    text-align: center;
+    width: 244px;
+    padding-bottom:44px ;
+}
+.job-con .describe .deslist li img{
+    width: 72px;
+    height: 72px;
+}
+.job-con .describe .deslist li p{
+    height: 30px;
+    padding: 8px 0;
+    font-size: 16px;
+}
+.job-con .describe .deslist li p:nth-child(2){
+    color: #795da3;
+    font-weight: 700;
+}
+.recruit{
+    height: 364px;
+    background: url("../img/job/wanted-data-bg.png") no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.recruit>h2{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+.recruit>p{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.recruit>p em{
+    color: #bd2c00;
+}
+.recruit .recruitlist{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+.recruit .recruitlist li{
+    background: rgba(255,255,255,.2);
+    border-radius: 8px;
+    width: 270px;
+    height: 108px;
+    margin-right: 18px;
+    padding-top: 24px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.recruit .recruitlist li p:nth-child(2){
+    font-weight: 700;
+}
+.student{
+    position: relative;
+    background: #f3f5f6;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #ccc;
+}
+.student>h2{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 40px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.student .stulist{
+    position: relative;
+    width: 1200px;
+    height: 352px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.student .studentlist{
+    position: absolute;
+    width: 6000px;
+    top:0px;
+    left: 0px;
+    display: flex;
+}
+.student .studentlist >li{
+    align-self: flex-start;
+    padding: 30px 30px;
+    width: 360px;
+    height: 290px;
+    background: #fff;
+    color: #545c63;
+    border-radius: 16px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(28,31,33,.1);
+}
+.student .studentlist >li .portrait{
+
+    display: flex;
+    justify-content: center;
+}
+.student .studentlist >li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.student .studentlist >li p:nth-child(2){
+    text-align: center;
+}
+.student .studentlist >li #test1{
+    display: flex;
+    justify-content: center;
+
+}
+.student .studentlist >li .test1 .layui-rate{
+    padding: 5px;
+    height: 33px;
+}
+.student .studentlist >li .studentcon{
+    line-height: 26px;
+    font-size: 16px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    padding-top: 20px;
+}
+.btn button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+ }
+.btn button:nth-child(1){
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+}
+.btn button:nth-child(2){
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+}
+.circle{
+    position: absolute;
+    top:470px;
+    left:calc(50% - 75px);
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.circle li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.2);
+}
+.circle li.active{
+    background: black;
+}
+
+/*常见问题*/
+.problem{
+    background: #f3f5f6;
+    padding-bottom: 150px;
+}
+.problem>h2 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.problem .problemlist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(28,31,33,.1)
+}
+.problem .problemlist>li{
+    display: flex;
+    width: 500px;
+    margin: 30px 20px;
+    height: 140px;
+    font-size: 16px;
+}
+.problem .problemlist>li .leftzan{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    height: 70px;
+    justify-content: space-between;
+}
+.problem .problemlist>li .leftzan>i{
+    display: inline-block;
+    padding: 10px;
+    background: #f3f5f6;
+    border-radius: 50%;
+}
+.problem .problemlist>li .leftzan>span{
+    text-align: center;
+}
+.problem .problemlist>li .rightcon{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10px;
+}
+.problem .problemlist>li .rightcon h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+.problem .problemlist>li .rightcon>p{
+    font-size: 14px;
+    line-height: 30px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

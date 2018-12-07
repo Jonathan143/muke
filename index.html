@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慕课网-程序员的梦工厂</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./views/css/login.css">
+</head>
+
+<body>
+    <!-- 顶部导航--start -->
+    <nav>
+        <div class="header-nav">
+            <h3 class="logo">
+                <a href="./index.html"><img src="./images/index/logo.png" alt="" height="72px"></a>
+            </h3>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="./views/free.html">免费课程</a></li>
+                    <li><a href="./views/free.html">实战课程</a></li>
+                    <li><a href="./views/job.html">就业班</a></li>
+                    <li><a href="#">猿问</a></li>
+                    <li><a href="./views/node.html">手记</a></li>
+                    <li><a href="./views/recruit.html">猿聘</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text">
+                <div class="search-sno">
+                    <span>Web前端</span>
+                    <span>小程序</span>
+                </div>
+                <i class="iconfont icon-search"></i>
+
+            </div>
+            <div class="hd-nav-right fr">
+                <ul>
+                    <li>
+                        <a href="./views/download.html">下载APP</a>
+                        <div class="download">
+                            <div class="pc">
+                                <p>慕课网浏览器 - PC客户端</p>
+                                <a href="#"><i class="iconfont icon-win"></i>Windows版</a>
+                                <small>Mac版开发中，敬请期待…</small>
+                            </div>
+                            <div class="app">
+                                <p>慕课网APP - 随时随地学编程</p>
+                                <div class="qcr">
+                                    <img src="./images/index/appload.png" alt="" width="108" height="108">
+                                    <a href="#"><i class="iconfont icon-pingguo"></i>AppStore下载</a>
+                                    <a href="#"><i class="iconfont icon-anzhuo"></i>Android下载</a>
+                                    <small>扫描下载慕课网APP</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="shopCar">
+                        <a href="#"><i class="iconfont icon-icon_gouwuchemi"></i>购物车</a>
+                        <div class="car">
+                            <div class="car-top">
+                                <h2>我的购物车</h2>
+                                <small>已加入0门课程</small>
+                            </div>
+                            <div class="car-cont">
+                                <i class="iconfont icon-icon_gouwuchemi"></i>
+                                <p>购物车里空空如也</p>
+                                <small>快去这里选购你中意的课程</small>
+                                <em>实战课程</em>
+                                <em>就业班</em>
+                            </div>
+                            <div class="car-bottom">
+                                <small>我的订单中心</small>
+                                <a href="#">去购物车</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)" id="register">注册</a>
+                        /
+                        <a href="JavaScript:void(0)" id="login">登录</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 登录注册模糊层 -->
+            <div class="overCurtain"></div>
+            <!-- 登录注册弹出层 -->
+			<div class="hide-center">
+				<div id="formhead">
+					<div id="formhead-title">
+						登录
+					</div>
+					<button type="button" id="close">X</button>
+				</div>
+				<div id="formbody">
+					<div class="loginUserName">
+						<input id="input-topright-loginInput" name="userName" class="loginInput" placeholder="请输入用户名" type="text" value="">
+					</div>
+					<div class="loginPassword">
+						<input id="input-bottomright-loginInput" name="password" class="loginInput" placeholder="请输入密码" type="password"
+						 value="" style="border-bottom-right-radius:5px;">
+					</div>
+					<div id="formfoot">
+						<button id="BSignIn" type="submit">登录</button>
+					</div>
+				</div>
+			</div>
+        </div>
+    </nav>
+    <!-- 顶部导航--end -->
+
+    <!-- 底部固定广告--start -->
+    <a href="JavaScript:void(0)" class="newcomer"><i>&times;</i></a>
+    <!-- 底部固定广告--end -->
+
+    <div class="banner w">
+        <!-- 二级菜单--start -->
+        <!-- width: 768px  h: 450px -->
+        <div class="menu fl">
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">前沿 / 区块链 / 人工智能</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>前沿技术</span>
+                    </div>
+                    <!-- 672px -->
+                    <div class="tag-box">
+                        <a href="#">微服务</a>
+                        <a href="#">区块链</a>
+                        <a href="#">以太坊</a>
+                        <a href="#">人工智能</a>
+                        <a href="#">机器学习</a>
+                        <a href="#">深度学习</a>
+                        <a href="#">计算机视觉</a>
+                        <a href="#">自然语言处理</a>
+                        <a href="#">数据分析&挖掘</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/5af2a67500016b9905400300.jpg" alt="">
+                            <ul>
+                                <li>区块链入门与去中心化应用实战</li>
+                                <li>￥199.00 初级 <i class="iconfont icon-wode"></i>732</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5ae3e5b80001818c06000338-240-135.jpg" alt="">
+                            <ul>
+                                <li>区块链技术核心概念与原理讲解</li>
+                                <li>入门 <i class="iconfont icon-wode"></i>34683</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5a5ddeda000145b405400300.jpg" alt="">
+                            <ul>
+                                <li>基于Python玩转人工智能框架 TensorFlow应用实践</li>
+                                <li>￥299.00 中级 <i class="iconfont icon-wode"></i>1624</em>
+                            </ul>
+
+
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5a7048580001670506000338-240-135.jpg" alt="">
+                            <ul>
+                                <li>Python人工智能常用库Numpy使用入门</li>
+                                <li>初级 <i class="iconfont icon-wode"></i>24703</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">前端 / 小程序 / JS</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>前端开发</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">HTML/CSS</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">Vue.js</a>
+                        <a href="#">React.JS</a>
+                        <a href="#">Angular</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">jQuery</a>
+                        <a href="#">Bootstrap</a>
+                        <a href="#">Sass/Less&挖掘</a>
+                        <a href="#">WebApp</a>
+                        <a href="#">前端工具</a>
+                        <a href="#">Html5</a>
+                        <a href="#">CSS3</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/5836c00a0001916906000338.jpg" alt="">
+                            <ul>
+                                <li>HTML5与CSS3实现动态网页</li>
+                                <li>￥628.00 5步／29课 <i class="iconfont icon-wode"></i>1879</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/583e42fb0001e04f05400300.jpg" alt="">
+                            <ul>
+                                <li>微信小程序入门与实战 常用组件API开发技巧项目实战</li>
+                                <li>￥149.00 初级 <i class="iconfont icon-wode"></i>15661</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5a9dfab40001bf1005400300.jpg" alt="">
+                            <ul>
+                                <li>前端跳槽必备 揭秘一线互联网公司高级前端JavaScript面试</li>
+                                <li>￥366.00 高级 <i class="iconfont icon-wode"></i>919</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/595067d5000132a105400300.jpg" alt="">
+                            <ul>
+                                <li>前端JavaScript面试技巧</li>
+                                <li>￥149.00 初级 <i class="iconfont icon-wode"></i>3213</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">后端 / JAVA / Python</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>后端开发</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">Java</a>
+                        <a href="#">SpringBoot</a>
+                        <a href="#">Python</a>
+                        <a href="#">爬虫</a>
+                        <a href="#">Django</a>
+                        <a href="#">Tornado</a>
+                        <a href="#">Go</a>
+                        <a href="#">PHP</a>
+                        <a href="#">C</a>
+                        <a href="#">C++</a>
+                        <a href="#">C#</a>
+                        <a href="#">Ruby</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/5a405a7700010f1c06000338.jpg" alt="">
+                            <ul>
+                                <li>C++零基础入门 热门编程语言 二级考试必备</li>
+                                <li>￥428.00 3步／34课 <i class="iconfont icon-wode"></i>732</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5aaa55850001a3ef10800600.jpg" alt="">
+                            <ul>
+                                <li>Java并发编程入门与高并发面试</li>
+                                <li>￥299.00 初级 <i class="iconfont icon-wode"></i>34683</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/59b8a486000107fb05400300.jpg" alt="">
+                            <ul>
+                                <li>全面系统 Python3入门+进阶课程 更快上手实际开发</li>
+                                <li>￥366.00 初级 <i class="iconfont icon-wode"></i>1624</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5b3307f50001859e05400300.jpg" alt="">
+                            <ul>
+                                <li>最火Python3 玩转实用小工具</li>
+                                <li>￥166.00 初级 <i class="iconfont icon-wode"></i>24703</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">移动 / Android / iOS</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>移动开发</span>
+                    </div>
+                    <!-- 672px -->
+                    <div class="tag-box">
+                        <a href="#">Android</a>
+                        <a href="#">iOS</a>
+                        <a href="#">React</a>
+                        <a href="#">native</a>
+                        <a href="#">WEEX</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/585243df00014f2406000338.jpg" alt="">
+                            <ul>
+                                <li>Android零基础入门</li>
+                                <li>￥499.00 5步／43课 <i class="iconfont icon-wode"></i>732</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5abe148300014c3305400300.jpg" alt="">
+                            <ul>
+                                <li>新浪微博资深大牛全方位剖析 iOS 高级面试</li>
+                                <li>￥366.00 高级 <i class="iconfont icon-wode"></i>34683</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5909a1250001197e05400300.jpg" alt="">
+                            <ul>
+                                <li>BAT大牛亲授技能+技巧 Android面试快速充电升级</li>
+                                <li>￥288.00 中级 <i class="iconfont icon-wode"></i>1624</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5959a60f0001cfd305400300.jpg" alt="">
+                            <ul>
+                                <li>Android通用框架设计与完整电商APP开发</li>
+                                <li>￥348.00 高级 <i class="iconfont icon-wode"></i>24703</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">云计算 / 大数据 / 容器</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>算法&数学</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">算法与数据结构</a>
+                        <a href="#">数学</a>
+                    </div>
+                    <div class="top-line">
+                        <span>云计算&大数据</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">大数据</a>
+                        <a href="#">Hadoop</a>
+                        <a href="#">Spark</a>
+                        <a href="#">Hbase</a>
+                        <a href="#">Storm</a>
+                        <a href="#">云计算</a>
+                        <a href="#">AWS</a>
+                        <a href="#">Docker</a>
+                        <a href="#">Kubernetes</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/5940e2a20001045a05400300.jpg" alt="">
+                            <ul>
+                                <li>以慕课网日志分析为例 进入大数据 Spark SQL 的世界</li>
+                                <li>￥366.00 中级 <i class="iconfont icon-wode"></i>1179</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/58e6081c00012ec206000338-240-135.jpg" alt="">
+                            <ul>
+                                <li>轻松愉快之玩转SpringData</li>
+                                <li>中级 <i class="iconfont icon-wode"></i>25494</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/5a9614850001bc3405400300.jpg" alt="">
+                            <ul>
+                                <li>系统学习Docker 践行DevOps理念</li>
+                                <li>￥299.00 中级 <i class="iconfont icon-wode"></i>1042</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/598986ae0001f07706000338-240-135.jpg" alt="">
+                            <ul>
+                                <li>HBase入门</li>
+                                <li>初级 <i class="iconfont icon-wode"></i>19649</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">运维 / 测试 / 数据库</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>运维&测试</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">运维</a>
+                        <a href="#">自动化运维</a>
+                        <a href="#">运维工具</a>
+                        <a href="#">Linux</a>
+                        <a href="#">测试</a>
+                        <a href="#">功能测试</a>
+                        <a href="#">性能测试</a>
+                        <a href="#">自动化测试</a>
+                        <a href="#">接口测试</a>
+                        <a href="#">安全测试</a>
+                    </div>
+                    <div class="top-line">
+                        <span>数据库</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">MySQL</a>
+                        <a href="#">Redis</a>
+                        <a href="#">MongoDB</a>
+                        <a href="#">Oracle</a>
+                        <a href="#">SQL</a>
+                        <a href="#">Server</a>
+                        <a href="#">NoSql</a>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="recomment">
+                            <img src="./images/index/5b0b60480001b95e06000338.jpg" alt="">
+                            <ul>
+                                <li>阿里大牛亲授 阿里云主机(ECS)与CentOS7实战</li>
+                                <li>￥288.00 中级 <i class="iconfont icon-wode"></i>732</em>
+                            </ul>
+                        </div>
+                        <div class="recomment">
+                            <img src="./images/index/593a3b0f0001383606000338-240-135.jpg" alt="">
+                            <ul>
+                                <li>使用java构建和维护接口自动化测试框架</li>
+                                <li>中级 20194 <i class="iconfont icon-wode"></i>34683</em>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <a href="javascript:void(0)">
+                        <span class="group">UI设计 / 3D动画 / 游戏</span>
+                        <i class="iconfont icon-right-triangle"></i>
+                    </a>
+                </div>
+                <div class="menu-er">
+                    <div class="top-line">
+                        <span>UI设计&多媒体</span>
+                    </div>
+                    <div class="tag-box">
+                        <a href="#">模型制作</a>
+                        <a href="#">动效动画</a>
+                        <a href="#">设计基础</a>
+                        <a href="#">设计工具</a>
+                        <a href="#">APPUI设计</a>
+                        <a href="#">产品交互</a>
+                        <a href="#">Photoshop</a>
+                        <div class="top-line">
+                            <span>游戏Unity</span>
+                        </div>
+                        <div class="tag-box">
+                            <a href="#">3D</a>
+                            <a href="#">Cocos2d-x</a>
+                        </div>
+                        <div class="recomment-box">
+                            <div class="recomment">
+                                <img src="./images/index/5a123d7e00011fa705400300.jpg" alt="">
+                                <ul>
+                                    <li>移动端App UI 设计入门与实战</li>
+                                    <li>￥199.00 中级 <i class="iconfont icon-wode"></i>526</em>
+                                </ul>
+                            </div>
+                            <div class="recomment">
+                                <img src="./images/index/5aa9d2c1000104d510800600.jpg" alt="">
+                                <ul>
+                                    <li>高薪设计师必修课 AE移动UI动效设计从入门到实战</li>
+                                    <li>￥199.00 中级 <i class="iconfont icon-wode"></i>172</em>
+                                </ul>
+                            </div>
+                            <div class="recomment">
+                                <img src="./images/index/587db7af00016b7e06000338-240-135.jpg" alt="">
+                                <ul>
+                                    <li>Axure入门初体验</li>
+                                    <li>入门 <i class="iconfont icon-wode"></i>51435</em>
+                                </ul>
+                            </div>
+                            <div class="recomment">
+                                <img src="./images/index/578741d3000151e806000338-240-135.jpg" alt="">
+                                <ul>
+                                    <li>前端工程师必备的PS技能——切图篇</li>
+                                    <li>初级 <i class="iconfont icon-wode"></i>236783</em>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 二级菜单--end -->
+        </div>
+            <!-- 轮播图--start -->
+            <div class="ban">
+                <div class="imgBox">
+                    <a href="./views/details.html"><img src="./images/index/banner1.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner2.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner3.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner4.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner5.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner6.jpg" alt=""></a>
+                    <a href="./views/details.html"><img src="./images/index/banner1.jpg" alt=""></a>
+                </div>
+                <span id="pre" class="iconfont icon-xiangyou-copy1"></span>
+                <span id="next" class="iconfont icon-xiangyou-copy"></span>
+                <div class="dot">
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            <div class="ft-banner">
+                <ul>
+                    <a href="./views/bBottom.html">
+                        <li><i class="web"></i>
+                            <p>Web前端攻城狮</p><span>互联网时代最火爆的技术</span>
+                        </li>
+                    </a>
+                    <a href="./views/bBottom.html">
+                        <li><i class="java"></i>
+                            <p>Java攻城狮</p><span>综合就业排名第一</span>
+                        </li>
+                    </a>
+                    <a href="./views/bBottom.html">
+                        <li><i class="andriod"></i>
+                            <p>Android工程师</p><span>移动设备市场份额第一</span>
+                        </li>
+                    </a>
+                    <a href="./views/bBottom.html">
+                        <li><i class="php"></i>
+                            <p>Php攻城狮</p><span>世界上最好的语言：）</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- 轮播图--end -->
+        
+    </div>
+
+    <div id="aCont">
+        <!-- 实战推荐--start -->
+        <div class="bgf">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span></span>
+                    <h2><em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em></h2>
+                    <span></span>
+                </div>
+                <div class="rec-cont">
+                    <div class="rec-item" v-for="(item,index) in Recommend" :key="index">
+                        <a href="./views/details.html">
+                            <img :src="item.imgSrc" alt="" width="216" height="120">
+                            <span>{{item.classify}}</span>
+                            <h2>{{item.title}}</h2>
+                            <p><em>{{item.subTitle}}</em><em><i class="iconfont icon-wode"></i>&nbsp;{{item.num}}</em><em><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i></em></p>
+                            <p>￥{{item.price}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 实战推荐--end -->
+
+        <!-- 新上好课--start -->
+        <div class="bg0">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="new-left"></span>
+                    <h2><em>新</em>／<em>上</em>／<em>好</em>／<em>课</em></h2>
+                    <span class="new-right"></span>
+                </div>
+                <div class="rec-cont flex-wrap">
+                    <div class="rec-item" v-for="(item,index) in NewRec" :key="index">
+                        <a href="./views/details.html">
+                            <img :src="item.imgSrc" alt="" width="216" height="120">
+                            <span>{{item.classify}}</span>
+                            <h2>{{item.title}}</h2>
+                            <p><em>{{item.subTitle}}</em><em><i class="iconfont icon-wode"></i>&nbsp;{{item.num}}</em><em><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i></em></p>
+                            <p>￥{{item.price}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新上好课--end -->
+
+
+        <!-- 新手入门--start -->
+        <div class="bgf">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="introduction-left"></span>
+                    <h2><em>新</em>／<em>手</em>／<em>入</em>／<em>门</em></h2>
+                    <span class="introduction-right"></span>
+                </div>
+                <div class="rec-cont flex-wrap">
+                    <div class="rec-item" v-for="(item,index) in Introduction" :key="index">
+                        <a href="./views/details.html">
+                            <img :src="item.imgSrc" alt="" width="216" height="120">
+                            <span>{{item.classify}}</span>
+                            <h2>{{item.title}}</h2>
+                            <p><em>{{item.subTitle}}</em><em><i class="iconfont icon-wode"></i>&nbsp;{{item.num}}</em><em><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i></em></p>
+                            <p>￥{{item.price}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新手入门--end -->
+
+
+        <!-- 技／能／提／升--start -->
+        <div class="bg0">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="skill-left"></span>
+                    <h2><em>技</em>／<em>能</em>／<em>提</em>／<em>升</em></h2>
+                    <span class="skill-right"></span>
+                </div>
+                <div class="rec-cont flex-wrap">
+                    <div class="rec-item" v-for="(item,index) in Skill" :key="index">
+                        <a href="./views/details.html">
+                            <img :src="item.imgSrc" alt="" width="216" height="120">
+                            <span>{{item.classify}}</span>
+                            <h2>{{item.title}}</h2>
+                            <p><em>{{item.subTitle}}</em><em><i class="iconfont icon-wode"></i>&nbsp;{{item.num}}</em><em><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i></em></p>
+                            <p>￥{{item.price}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 技／能／提／升--end -->
+
+
+
+        <!-- 前／沿／技／术--start -->
+        <div class="bgf">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="technology-left"></span>
+                    <h2><em>前</em>／<em>沿</em>／<em>技</em>／<em>术</em></h2>
+                    <span class="technology-right"></span>
+                </div>
+                <div class="rec-cont flex-wrap">
+                    <div class="rec-item" v-for="(item,index) in Technology" :key="index">
+                        <a href="./views/details.html">
+                            <img :src="item.imgSrc" alt="" width="216" height="120">
+                            <span>{{item.classify}}</span>
+                            <h2>{{item.title}}</h2>
+                            <p><em>{{item.subTitle}}</em><em><i class="iconfont icon-wode"></i>&nbsp;{{item.num}}</em><em><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i></em></p>
+                            <p>￥{{item.price}}</p>
+                         </a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 前／沿／技／术--end -->
+
+
+
+        <!-- 精／彩／手／记／及／猿／问--start -->
+        <div class="bg0">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="yuan-left"></span>
+                    <h2><em>精</em>／<em>彩</em>／<em>手</em>／<em>记</em>／<em>及</em>／<em>猿</em>／<em>问</em></h2>
+                    <span class="yuan-right"></span>
+                </div>
+                <dl class="article">
+                    <dd class="topic">
+                        <span class="hot">热门话题</span>
+                        <div class="topic-titlt clearfix">
+                            <a href="#">#【内推第2波】# <br>
+                                打工奋斗7万落京户VS自主创业牧马城市，如何抉择？</a>
+                            <img src="images/index/5abc43e500012ec805120512.jpg" alt="" width="72" height="72">
+                        </div>
+                        <p>毕业求职？跳槽加薪？纠结滋润加班还是苦练x年自主创业？速速提问互撩，你在撩的极有可能就是你的Boss！激不激动？惊不惊喜？Offer已在这里！你的简历在哪里？Scott老师邮箱：wolf18387@qq.comJeson老师邮箱：jeson@imoocc.com</p>
+                        <div class="topic-more clearfix"><a href="#">了解详情 ⇢</a></div>
+                        <div class="top-line">
+                            <span>往期回顾</span>
+                        </div>
+                        <div class="old-topic">
+                            <div class="topic-titlt clearfix">
+                                <a href="#">#【获奖名单戳查看更多】#<br>
+                                    当我们谈论Java时，我们都谈些什么？</a>
+                                <img src="images/index/5abaf07b00016b7005120512.jpg" alt="" width="72" height="72">
+                            </div>
+                            <div class="topic-titlt clearfix">
+                                <a href="#">#【内推第1波】# <br>
+                                    直击BAT面试机会！行业大佬在线答疑</a>
+                                <img src="images/index/5aaf11ae0001d26c05120512.jpg" alt="" width="72" height="72">
+                            </div>
+                            <div class="topic-titlt clearfix">
+                                <a href="#">#【花式填坑】第23期# <br>
+                                    运维进化篇：成为Python DevOps工程师有哪些必备条件？</a>
+                                <img src="images/index/5a5d55de00015cba05120512.jpg" alt="" width="72" height="72">
+                            </div>
+                            <div class="topic-more clearfix"><a href="#">更多往期话题 ⇢</a></div>
+                        </div>
+                    </dd>
+                    <dd class="topic art" v-for="(article,index) in articles" :key="index">
+                        <span class="hot"><i class="iconfont icon-wenzhang"></i>手记文章</span>
+                        <div class="topic-titlt clearfix">
+                            <a href="#">{{article.title}}</a>
+                            <img :src="article.imgSrc" alt="" width="72" height="72">
+                        </div>
+                        <p>{{article.text}}</p>
+                        <div class="topic-more clearfix"><em>浏览：{{article.read}}</em><em>推荐：{{article.share}}</em> <a
+                                href="#">阅读全文 ⇢</a></div>
+                    </dd>
+                    <dd class="topic pob" v-for="(problem,index) in problems" :key="index+6">
+                        <span class="hot"><i class="iconfont icon-ask"></i>相关猿问</span>
+                        <div class="topic-titlt clearfix">
+                            <a href="#">{{problem.title}}</a>
+                        </div>
+                        <p>最赞回答</p>
+                        <p>{{problem.text}}</p>
+                        <div class="topic-more clearfix"><a href="#">共{{problem.num}}回答 ⇢</a></div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 精／彩／手／记／及／猿／问--end -->
+
+
+        <!-- 慕／课／精／英／名／师 --start -->
+        <!-- eliteTbg.jpg -->
+        <div class="tec-bg">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="tec-left"></span>
+                    <h2><em>慕</em>／<em>课</em>／<em>精</em>／<em>英</em>／<em>名</em>／<em>师</em></h2>
+                    <span class="tec-right"></span>
+                </div>
+                <div class="tec">
+                    <div class="tecc">
+                        <div class="tec-box">
+                            <div class="tec-items" v-for="(tecItem,index) in tecItems">
+                                <div class="tec-item">
+                                    <img :src="tecItem.src1" alt="">
+                                    <h2 v-text="tecItem.name1"></h2>
+                                    <p v-text="tecItem.title1"></p>
+                                    <span v-text="tecItem.text1"></span>
+                                </div>
+                                <div class="tec-item">
+                                    <img :src="tecItem.src2" alt="">
+                                    <h2 v-text="tecItem.name2"></h2>
+                                    <p v-text="tecItem.title2"></p>
+                                    <span v-text="tecItem.text2"></span>
+                                </div>
+                                <div class="tec-item">
+                                    <img :src="tecItem.src3" alt="">
+                                    <h2 v-text="tecItem.name3"></h2>
+                                    <p v-text="tecItem.title3"></p>
+                                    <span v-text="tecItem.text3"></span>
+                                </div>
+                                <div class="tec-item">
+                                    <img :src="tecItem.src4" alt="">
+                                    <h2 v-text="tecItem.name4"></h2>
+                                    <p v-text="tecItem.title4"></p>
+                                    <span v-text="tecItem.text4"></span>
+                                </div>
+                                <div class="tec-item">
+                                    <img :src="tecItem.src5" alt="">
+                                    <h2 v-text="tecItem.name5"></h2>
+                                    <p v-text="tecItem.title5"></p>
+                                    <span v-text="tecItem.text5"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button @click='tecPre' id='tecPre'><i class="iconfont icon-xiangyou-copy1"></i></button>
+                    <button @click="tecNext" id="tecNext"><i class="iconfont icon-xiangyou-copy"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- 慕／课／精／英／名／师--end -->
+
+
+        <!-- 吊／炸／天／全／明／星 --start -->
+        <div class="bgf">
+            <div class="recommend w">
+                <div class="rec-log">
+                    <span class="star-left"></span>
+                    <h2><em>吊</em>／<em>炸</em>／<em>天</em>／<em>全</em>／<em>明</em>／<em>星</em></h2>
+                    <span class="star-right"></span>
+                </div>
+                <div class="star">
+                    <div class="star-top">
+                        <div class="pop" v-for="(pop,index) in pops" :key="index">
+                            <i class="iconfont icon-crown"></i>
+                            <img :src="pop.src" alt="">
+                            <h2 v-text="pop.title"></h2>
+                            <p v-text="pop.text"></p>
+                        </div>
+                    </div>
+                    <div class="star-bottom">
+                        <div class="star-box" v-for="(popimg,index) in popimgs">
+                            <img :src="popimg.src" alt="" :key="index">
+                            <span>
+                                <p>="风骚课程学霸"=</p>
+                                <p>悬崖上的金魚姬</p>
+                                <p>一周获得 72积分</p>
+                                <i>◆</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 吊／炸／天／全／明／星 --end -->
+    </div>
+
+    <div class="right-nav">
+        <ul>
+            <li><i class="iconfont icon-fankui"></i><span>意见反馈</span></li>
+            <li><i class="iconfont icon-bangzhu"></i><span>帮助中心</span></li>
+            <li><i class="iconfont icon-diedaisanicon45"></i><span>app下载</span>
+                <div class="qcrapp"></div>
+            </li>
+            <li><i class="iconfont icon-Wchat"></i><span>官方微信</span>
+                <div class="qcrw"></div>
+            </li>
+            <li id="goTop"><i class="iconfont icon-icon"></i><span>返回顶部</span></li>
+        </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="bg0">
+        <footer class="footer w">
+            <div class="ft-left">
+                <ul>
+                    <li>企业合作</li>
+                    <li>人才招聘</li>
+                    <li>联系我们</li>
+                    <li>讲师招募</li>
+                    <li>帮助中心</li>
+                    <li>意见反馈</li>
+                    <li>慕课大学</li>
+                    <li>友情链接</li>
+                </ul>
+                <small>© 2018 imooc.com 京ICP备 12003892号-11</small>
+            </div>
+            <div class="ft-right">
+                <ul>
+                    <li><i class="iconfont icon-weixin1"></i><span>官方公众号</span></li>
+                    <li><i class="iconfont icon-5"></i><span>官方微博</span></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#aCont',
+            data() {
+                return {
+                    Recommend: [],
+                    NewRec: [],
+                    Introduction: [],
+                    Skill: [],
+                    Technology: [],
+                    articles: [],
+                    problems: [],
+                    tecItems: [],
+                    index: 0,
+                    pops: [],
+                    popimgs: [],
+                }
+            },
+            methods: {
+                tecPre() {
+                    let tecBox = $('.tec-box');
+                    let tecItems = $('.tec-items');
+                    if (this.index == 0) {
+                        this.index = tecItems.length - 2;
+                        tecBox.css({
+                            left: -1152 * (tecItems.length - 1),
+                        })
+                    } else {
+                        this.index--;
+                    }
+                    tecBox.stop().animate({
+                        left: -1152 * this.index,
+                    });
+                },
+                tecNext() {
+                    let tecBox = $('.tec-box');
+                    let tecItems = $('.tec-items');
+                    if (this.index == tecItems.length - 1) {
+                        this.index = 1;
+                        tecBox.css({
+                            left: 0,
+                        })
+                    } else {
+                        this.index++;
+                    }
+                    tecBox.stop().animate({
+                        left: -1152 * this.index,
+                    });
+
+                },
+            },
+            created() {
+                axios.get('./data.json')
+                    .then((res) => {
+                        this.Recommend = res.data.recommend;
+                        this.NewRec = res.data.newRec;
+                        this.Introduction = res.data.introduction;
+                        this.Skill = res.data.skill;
+                        this.Technology = res.data.technology;
+                        this.articles = res.data.articles;
+                        this.problems = res.data.problem;
+                        this.tecItems = res.data.tecItems;
+                        this.pops = res.data.pop;
+                        this.popimgs = res.data.popimg;
+                    })
+            }
+        })
+    </script>
+</body>
+
+</html>

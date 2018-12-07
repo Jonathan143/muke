@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue全家桶+SSR+Koa2全栈开发美团网</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="cont">
+        <div class="navtop ">
+            <div class="nav mg">
+                <ul class="leftnavtop ">
+                    <li><a href="../index.html">慕课网首页</a></li>
+                    <li><a href="./free.html">免费课程</a></li>
+                    <li><a href="./free.html" class="only">实战课程</a></li>
+                    <li><a href="./job.html">就业班</a></li>
+                    <li><a href="#">猿问</a></li>
+                    <li><a href="./node.html">手记</a></li>
+                    <li><a href="./recruit.html">猿聘</a></li>
+                </ul>
+                <ul class="rightnavtop">
+                    <li>
+                        <a href="./download.html">下载App
+                            <div class="download">
+                                <div class="topdown">
+                                    <div class="first">
+                                        <p>慕课网浏览器-pc客户端</p>
+                                        <p class="radius"><i class="icon iconfont icon-win"></i> Windows版</p>
+                                        <p>Mac版开发中，敬请期待...</p>
+                                    </div>
+                                </div>
+                                <div class="botdown">
+                                    <p>慕课网App-随时随地学编程</p>
+                                    <div class="appdown clearfix">
+                                        <div class="appcode fl">
+                                            <img src="./images/details/code.png" alt="">
+                                        </div>
+                                        <div class="appurl fr">
+                                            <p class="radiu"><i class="icon iconfont icon-pingguo"></i> App Store下载</p>
+                                            <p class="radiu"><i class="icon iconfont icon-anzhuo"></i> Android下载</p>
+                                            <p>扫描下载慕课网APP</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="bCar">
+                            <i class="gouwuche icon iconfont icon-icon_gouwuchemi"></i>
+                            购物车
+                            <em>{{carNum}}</em>
+                            <div class="addcar">
+                                <div class="mycar">
+                                    <span>我的购物车</span>
+                                    <span>已加入 {{carNum}} 门课程</span>
+                                </div>
+                                <hr>
+                                <div class="concar">
+                                    <!-- <p class="icon iconfont icon-icon_gouwuchemi"></p>
+                                    <p>购物车里空空如业</p>
+                                    <p>快去这里选购物你中意的课程</p>
+                                    <p class="red">实战课程</p>
+                                    <p class="red">就业班</p> -->
+                                    <img src="./images/details/5baf3f0a000180df06000338-160-90.jpg" alt="">
+                                    <ul class="carR">
+                                        <li>Vue全家桶+SSR+Koa2全栈开发美团网</li>
+                                        <li>￥{{allPrice}}.00</li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="footcar">
+                                    <span>我的订单中心</span>
+                                    <span>去购物车</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li><a href="#">登录</a>/<a href="#">注册</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <header>
+            <div class="header">
+                <div class="hd-top">
+                    <div class="hd-left">
+                        <a href="./free.html">实战</a>
+                        \
+                        <a href="#">Vue全家桶+SSR+Koa2全栈开发美团网</a>
+                    </div>
+                    <div class="hd-right">
+                        <a href="#"><i class="iconfont icon-xingxing"></i>收藏</a>
+                        <a href="#"><i class="iconfont icon-weixin"></i></a>
+                        <a href="#"><i class="iconfont icon-iconfontqq1"></i></a>
+                        <a href="#"><i class="iconfont icon-weibo"></i></a>
+                    </div>
+                </div>
+                <h1>
+                    前端工程师晋升课程<br>
+                    Vue全家桶+SSR+Koa2全栈开发美团网
+                </h1>
+                <h2>
+                    覆盖大前端8项技术，让你迅速进阶全栈工程师
+                </h2>
+                <div class="line"></div>
+                <div class="info">
+                    <ul>
+                        <li>难度 中级</li>
+                        <li>·</li>
+                        <li>时长 17小时</li>
+                        <li>·</li>
+                        <li>学习人数 882</li>
+                        <li>·</li>
+                        <li>综合评分 9.87分</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <span>¥ 388.00</span>
+                </div>
+                <div class="buy">
+                    <a href="JavaScript:void(0)" @click="addCar">立即购买</a>
+                    <a href="JavaScript:void(0)" @click="addCar"><em></em><i class="iconfont icon-icon_gouwuchemi"></i></a>
+                </div>
+                <div class="huabei">
+                    <span><i class="iconfont icon-huabei"></i>支持支付宝花呗分期</span>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">课程介绍</a><span></span></li>
+                <li><a href="#">组合套餐</a><span></span></li>
+                <li><a href="#">课程章节</a><span></span></li>
+                <li><a href="#">售前咨询</a><span></span></li>
+                <li><a href="#">用户评价</a><span></span></li>
+                <li><a href="#">环境参数</a><span></span></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="section-bo"><i class="iconfont icon-bofang"></i>
+                <p>观看导学视频</p>
+            </div>
+            <div class="section-test">
+                <h2>Vue全家桶+SSR+Koa2全栈开发美团网</h2>
+                <p>这是一门前端全栈课程，课程中采用了许多新的技术，结合包括Vue2.5、Koa2、MongoDB、Redis等多种前后端技术完成了美团网的开发。课程从新技术的基础讲解入手，通过细致的项目开发过程，带你开发一个美团网PC网页版，同学们通过这门课程的学习可以掌握更全面的项目架构，迅速提升，达到高级工程师的水平。</p>
+            </div>
+            <div class="section-line"></div>
+            <div class="section-a">
+                <img src="./images/details/54584cb50001e5b302200220-100-100.jpg" alt="">
+                <h3>快乐动起来呀</h3>
+                <p>资深前端工程师</p>
+                <div class="section-info">
+                    <h2>快乐动起来呀</h2>
+                    <h3>资深前端工程师</h3>
+                    <p>7年工作经验的资深前端工程师，主要从事Web视频领域的底层开发。先后在360、去哪儿网、某知名视频公司工作。授课风格：用最通俗的语言描述抽象是设计和原理，分分钟带你玩转技术和职场。正在准备开源Web视频播放器，功能独具一格。</p>
+                    <span>◆</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 顶部固定导航 -->
+        <div class="topFiexNav" v-show="topFiexNav">
+            <h1>Vue全家桶+SSR+Koa2全栈开发美团网</h1>
+            <ul>
+                <li><a href="#">课程介绍</a></li>
+                <li><a href="#">组合套餐</a></li>
+                <li><a href="#">课程章节</a></li>
+                <li><a href="#">售前咨询</a></li>
+                <li><a href="#">用户评价</a></li>
+                <li><a href="#">环境参数</a></li>
+            </ul>
+            <div class="topFiexNav-buy">
+                <span class="price">
+                    ￥388.00
+                </span>
+                <div class="buy">
+                    <a href="#">立即购买</a>
+                    <a href="#"><em></em><i class="iconfont icon-icon_gouwuchemi"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-a">
+            <div class="info-a-cont w">
+                <div class="info-a-title">
+                    <h2>Vue全家桶+SSR+Koa2全栈级课程</h2>
+                    <p>融汇大前端8项技术，助你进阶全栈工程师</p>
+                </div>
+                <div class="info-a-item">
+                    <ul>
+                        <li v-for="(item,index) in infoAitem" :key="index">
+                            <img :src="item.imgSrc" alt="">
+                            <h3 v-text="item.title"></h3>
+                            <p v-text="item.info"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-b">
+            <div class="info-b-cont w">
+                <h2>大展拳脚 全栈开发美团网电商项目</h2>
+                <p>实实在在的真项目，帮助你进一步理解全栈开发</p>
+                <img src="./images/details/section2-1.png" alt="">
+            </div>
+        </div>
+        <div class="info-c">
+            <div class="info-c-cont w">
+                <h2>无论在业务还是技术栈上都保持很大优势</h2>
+                <div class="c-item">
+                    <div class="secImg"><img src="./images/details/section3-1.png" alt=""></div>
+                    <div class="item-fn">
+                        <img src="./images/details/section3-2.png" alt="">
+                        <h3>功能完善看得见</h3>
+                        <ul>
+                            <li v-for="(item,index) in sec3Items" :key="index">{{item}}</li>
+                        </ul>
+                    </div>
+                    <div class="item-tech">
+                        <img src="./images/details/section3-3.png" alt="">
+                        <h3>技术全面有深度</h3>
+                        <ul>
+                            <li v-for="(item,index) in sec3Items2" :key="index">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-d">
+            <div class="info-d-cont w">
+                <h2>“颜值”和 “实力”兼得，好课程不容错过</h2>
+                <ul>
+                    <li v-for="(item,index) in sec4Items">
+                        <img :src="item.imgSrc" alt="">
+                        <h3>{{item.title}}</h3>
+                        <p v-html="item.text"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info-e">
+            <div class="info-e-cont w">
+                <h2>学员专享增值服务</h2>
+                <ul>
+                    <li>
+                        <i class="iconfont icon-wenda"></i>
+                        <h3>问答专区</h3>
+                        <p>关于课程的问题都可在问答区随时提问，讲师会进行<br>集中答疑</p>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-mayun"></i>
+                        <h3>源码开放</h3>
+                        <p>课程案例代码完全开放给你，你可以根据所学知<br>识，自行修改、优化</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info-f">
+            <div class="info-f-cont w">
+                <ul>
+                    <li>
+                        <h2>适合人群</h2>
+                        <p>课程设计非常全面，只要你对Vue+Node感兴趣<br>想向全栈方向发展或者一直对后端不太了解的前端同学<br>都可以学习本门课程</p>
+                    </li>
+                    <li>
+                        <h2>技术储备要求</h2>
+                        <p>Node端基础知识，对Koa框架有使用经验<br>对Vue和Vuex至少有半年以上使用经验<br>有至少一个前后端分离项目的开发经验</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="envir-box">
+            <div class="envir w">
+                <h3>环境参数</h3>
+                <ul>
+                    <li v-for="(e,index) in envir" :key="index">
+                        <span class="detail-tag">{{e.tag}}<i>◆</i></span>
+                        <span class="detail">{{e.v}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="question">
+            <div class="question-input">
+                <input type="text" placeholder="输入你的课程咨询问题" class="input-block">
+                <div class="btn">提问</div>
+            </div>
+            <div class="question-items w">
+                <ul>
+                    <li v-for="(question,index) in questions">
+                        <i class="iconfont icon-dianzan"></i>
+                        <div class="q">
+                            <h3>{{question.q}}</h3>
+                            <p>{{question.d}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ad">
+            <div class="shizhan clearfix">
+                <h1>实战推荐</h1>
+                <ul>
+                    <li v-for="(s,index) in shizhan">
+                        <div class="s-top">
+                            <img :src="s.imgSrc" alt="">
+                        </div>
+                        <div class="s-cont">
+                            <h3>{{s.title}}</h3>
+                            <p>{{s.text}}</p>
+                            <p>{{s.info}}</p>
+                            <p><em><i v-for="xing in 5" class="iconfont icon-xingxing"></i></em><span>￥{{s.price}}</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="keqian clearfix">
+                <h1>课前必学</h1>
+                <ul>
+                    <li v-for="(kq,index) in keqian">
+                        <div class="k-top">
+                            <span>{{kq.class}}</span>
+                        </div>
+                        <div class="k-cont">
+                            <h3>{{kq.title}}</h3>
+                            <p>{{kq.text}}</p>
+                            <p>{{kq.info}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="right-nav">
+            <ul>
+                <li><i class="iconfont icon-fankui"></i><span>意见反馈</span></li>
+                <li><i class="iconfont icon-bangzhu"></i><span>帮助中心</span></li>
+                <li><i class="iconfont icon-diedaisanicon45"></i><span>app下载</span>
+                    <div class="qcrapp"></div>
+                </li>
+                <li><i class="iconfont icon-Wchat"></i><span>官方微信</span>
+                    <div class="qcrw"></div>
+                </li>
+                <li id="goTop" @click="backTop" :class="{'backShow':isShow}"><i class="iconfont icon-icon"></i><span>返回顶部</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="ft">
+        <footer class="footer">
+            <div class="ft-left">
+                <ul>
+                    <li>企业合作</li>
+                    <li>人才招聘</li>
+                    <li>联系我们</li>
+                    <li>讲师招募</li>
+                    <li>帮助中心</li>
+                    <li>意见反馈</li>
+                    <li>慕课大学</li>
+                    <li>友情链接</li>
+                </ul>
+                <small>© 2018 imooc.com 京ICP备 12003892号-11</small>
+            </div>
+            <div class="ft-right">
+                <ul>
+                    <li><i class="iconfont icon-weixin1"></i><span>官方公众号</span></li>
+                    <li><i class="iconfont icon-5"></i><span>官方微博</span></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#cont',
+            data() {
+                return {
+                    infoAitem: [],
+                    sec3Items: [],
+                    sec3Items2: [],
+                    sec4Items: [],
+                    envir: [],
+                    questions: [],
+                    shizhan: [],
+                    keqian: [],
+                    clientH: 0,
+                    isShow: false,
+                    topFiexNav: false,
+                    topNavH: 0,
+                    carNum: 1,
+                }
+            },
+            computed: {
+                allPrice(){
+                    return this.carNum * 388;
+                }  
+            },
+            created() {
+                axios.get('./data.json')
+                    .then((res) => {
+                        this.infoAitem = res.data.detSection;
+                        this.sec3Items = res.data.sec3Items;
+                        this.sec3Items2 = res.data.sec3Items2;
+                        this.sec4Items = res.data.sec4Items;
+                        this.envir = res.data.envir;
+                        this.questions = res.data.questions;
+                        this.shizhan = res.data.shizhan;
+                        this.keqian = res.data.keqian;
+                    })
+            },
+            methods: {
+                handleScrool() {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > this.clientH) {
+                        this.isShow = true;
+                    } else {
+                        this.isShow = false;
+                    }
+                    if (scrollTop > this.topNavH) {
+                        this.topFiexNav = true;
+                    } else {
+                        this.topFiexNav = false;
+                    }
+                },
+                backTop() {
+                    let timer = '';
+                    clearInterval(timer)
+                    timer = setInterval(() => {
+                        document.documentElement.scrollTop -= 100;
+                        if (document.documentElement.scrollTop == 0) {
+                            clearInterval(timer)
+                        }
+
+                    }, 10);
+                },
+                addCar() {
+                    if(this.carNum<999){
+                        this.carNum++;
+                    }else {
+                        this.carNum = 999
+                    }
+                }
+            },
+            mounted() {
+                this.clientH = document.documentElement.clientHeight;
+                let tnav = document.querySelector('nav');
+                this.topNavH = tnav.offsetTop + tnav.offsetHeight;
+
+                window.addEventListener('scroll', this.handleScrool);
+            },
+            destroyed() {
+                window.removeEventListener('scroll', this.handleScrool)
+            }
+        })
+    </script>
+</body>
+
+</html>

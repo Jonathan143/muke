@@ -1,0 +1,204 @@
+.navtop{
+    min-width: 1200px;
+    height: 40px;
+    background: #000;
+    line-height: 40px;
+    font-size: 14px;
+}
+.navtop .nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navtop .leftnavtop{
+
+    display: flex;
+}
+.navtop .leftnavtop li + li{
+    margin: 0 8px;
+}
+.navtop .leftnavtop li:hover > a{
+    background: rgba(255,255,255,.1);
+    color: #fff;
+}
+.navtop .leftnavtop a{
+    display: inline-block;
+    padding:0 10px;
+    color: #84899b;
+}
+.navtop .leftnavtop a.only{
+    color: #fff;
+}
+.navtop .rightnavtop{
+    display: flex;
+    color: #84899b;
+}
+.navtop .rightnavtop a{
+    color: #84899b;
+}
+/*当鼠标移动到下载app时显示*/
+.navtop .rightnavtop li:nth-child(1)>a:hover > .download{
+    display: block;
+    z-index: 99;
+}
+.navtop .rightnavtop li a{
+    display: inline-block;
+    height: 100%;
+}
+.navtop .rightnavtop li:nth-child(3) >a{
+    color: #fff;
+}
+.navtop .rightnavtop li a:hover{
+    color: #fff;
+}
+.navtop .rightnavtop li:nth-child(3) >a:hover{
+    color: #F01414;
+}
+.navtop .rightnavtop li + li{
+    margin: 0 8px;
+    padding:0 10px;
+}
+.navtop .rightnavtop li:nth-child(1){
+    position: relative;
+}
+.navtop .rightnavtop li .gouwuche{
+    padding: 0 10px;
+}
+.navtop .download{
+    display: none;
+    position: absolute;
+    right: 0;
+    top:40px;
+    width: 310px;
+    height: 310px;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);;
+    background: #fff;
+}
+.navtop .download .first{
+    border-bottom: 1px solid #ccc;
+    color: #000;
+}
+.navtop .download .first p:nth-child(1){
+    width: 150px;
+    margin: 0 auto;
+}
+.navtop .download .first .radius{
+    width: 130px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    /*border-radius:50% 50% 50% 50%/100% 100% 100% 100%;*/
+    border-radius:20px;
+}
+.navtop .download .first p:nth-child(3){
+    width: 170px;
+    margin: 0 auto;
+}
+.navtop .botdown{
+    width: 270px;
+    margin: 0 auto;
+    color: #fff;
+}
+.navtop .botdown .appcode{
+    width: 120px;
+    height: 120px;
+}
+.navtop .botdown .appcode img{
+    width: 100%;
+    height: 100%;
+}
+.navtop .botdown .appurl p{
+    margin: 0 auto;
+}
+.navtop .botdown .appurl p:nth-child(1){
+    margin-bottom: 10px;
+}
+.navtop .botdown .appurl .radiu{
+    width: 130px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    cursor: pointer;
+    /*border-radius:50% 50% 50% 50%/100% 100% 100% 100%;*/
+    border-radius: 20px;
+}
+
+.navtop .botdown .appurl p:nth-child(3){
+    color: #000;
+}
+.addcar{
+    position: absolute;
+    top:40px;
+    right: 0;
+    width: 300px;
+    height:400px;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    padding: 10px;
+    display: none;
+    background: #fff;
+    color: #000;
+
+}
+.addcar .mycar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+.addcar .mycar span:nth-child(1){
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.addcar .concar{
+    margin-bottom: 20px;
+}
+.addcar .concar p:nth-child(1){
+    width: 100px;
+    height: 70px;
+    padding-top: 40px;
+    font-size: 70px;
+    margin: 0 auto;
+}
+.addcar .concar p{
+    text-align: center;
+}
+.addcar .concar p.red{
+    color: #F01414;
+}
+.addcar .footcar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.addcar .footcar span:last-child{
+    color: #fff;
+}
+.navtop .rightnavtop li:nth-child(2){
+    position: relative;
+}
+.navtop .rightnavtop li:nth-child(2) a:hover > .addcar{
+    display: block;
+    z-index: 99;
+}
+.addcar .footcar span:nth-child(2){
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #F01414;
+    text-align: center;
+    cursor: pointer;
+    /*border-radius:50% 50% 50% 50%/100% 100% 100% 100%;*/
+    border-radius:20px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.mg{
+    width: 1200px;
+    margin: 0 auto;
+}
